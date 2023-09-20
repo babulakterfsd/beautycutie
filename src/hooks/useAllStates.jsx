@@ -1,7 +1,13 @@
 'use client';
 
+import { useState } from 'react';
+
 const AllStates = () => {
-  return {};
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  return {
+    isMenuOpen,
+    setIsMenuOpen,
+  };
 };
 
 export default AllStates;
