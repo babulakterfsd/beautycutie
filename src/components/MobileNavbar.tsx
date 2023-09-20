@@ -84,21 +84,17 @@ const AnimatedMenubar = () => {
       >
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen
-              ? 'rotate-45 translate-y-2 opacity-50 group-hover:opacity-100'
-              : 'opacity-50 group-hover:opacity-100'
+            isMenuOpen ? 'rotate-45 translate-y-2  ' : ' '
           }`}
         />
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'
+            isMenuOpen ? 'opacity-0' : ' '
           }`}
         />
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen
-              ? '-rotate-45 -translate-y-[10px] opacity-50 group-hover:opacity-100'
-              : 'opacity-50 group-hover:opacity-100'
+            isMenuOpen ? '-rotate-45 -translate-y-[10px]  ' : ' '
           }`}
         />
       </button>
