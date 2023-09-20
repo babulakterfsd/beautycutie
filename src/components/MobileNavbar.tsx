@@ -70,7 +70,7 @@ const MobileMenu = () => {
 const AnimatedMenubar = () => {
   const { isMenuOpen, setIsMenuOpen } = useAppContext();
 
-  const genericHamburgerLine = `h-1 w-5 rounded-full my-1 bg-red-800 transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-5 rounded-full my-1 bg-[#eb8817] transition ease transform duration-300`;
   return (
     <div className="overflow-x-hidden flex justify-between items-center h-16 py-2 px-4 shadow-md fixed top-0 left-0 right-0">
       <Link href="/">
@@ -84,17 +84,21 @@ const AnimatedMenubar = () => {
       >
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen ? 'rotate-45 translate-y-2  ' : ' '
+            isMenuOpen
+              ? 'rotate-45 translate-y-2 opacity-50 group-hover:opacity-100'
+              : 'opacity-50 group-hover:opacity-100'
           }`}
         />
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen ? 'opacity-0' : ' '
+            isMenuOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'
           }`}
         />
         <div
           className={`${genericHamburgerLine} ${
-            isMenuOpen ? '-rotate-45 -translate-y-[10px]  ' : ' '
+            isMenuOpen
+              ? '-rotate-45 -translate-y-[10px] opacity-50 group-hover:opacity-100'
+              : 'opacity-50 group-hover:opacity-100'
           }`}
         />
       </button>
