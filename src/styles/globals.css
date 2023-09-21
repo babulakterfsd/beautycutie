@@ -38,6 +38,9 @@ body {
 .text-black {
   color: #475467;
 }
+.letterGap {
+  letter-spacing: -0.205px;
+}
 
 
 /* gradients */
@@ -49,20 +52,15 @@ body {
   color: transparent;
 }
 
-/* .gradientBg {
-  background: linear-gradient(
-    to right,
-    rgba(243, 130, 26, 1) 1.58%,
-    rgba(239, 120, 113, 1) 45.58%,
-    rgba(214, 53, 99, 1) 98.69%
-  );
-} */
+.gradientBg {
+  background: linear-gradient(248deg, #A8DDE6 0.94%, #FFA5A5 100%);
+}
 
 
 
 /* responsive classes */
 .main-container {
-  @apply w-full mx-auto lg:px-2;
+  @apply w-full mx-auto px-4 lg:px-2;
 }
 @media (min-width: 576px) {
   .main-container {

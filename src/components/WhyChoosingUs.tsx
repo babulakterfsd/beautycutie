@@ -1,0 +1,51 @@
+import Image from 'next/image';
+import easypricingicon from '../../public/assets/images/easypricingicon.png';
+import fairpricingicon from '../../public/assets/images/fairpricingicon.png';
+import msgicon from '../../public/assets/images/msgicon.png';
+
+const WhyChoosingUs = () => {
+  return (
+    <section className="lg:mt-36 main-container lg:px-24">
+      <h2 className="text-[#67748E] text-center font-roboto lg:text-4xl font-medium capitalize letterGap">
+        Why Choosing <span>Bookitu</span> Over Other Booking Systems?
+      </h2>
+      <div className="lg:mt-20  grid grid-cols-12 lg:gap-x-8">
+        {/* programmatic approach */}
+        <div className="col-span-12 md:col-span-4 flex flex-col justify-center items-center">
+          <Image src={msgicon} alt="msgicon" width={50} height={50} />
+          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] lg:mt-4 lg:mb-2">
+            Pragmatic approach
+          </h4>
+          <p className="text-[#67748E] font-inter lg:leading-[24px] text-center">
+            We take work off your shoulders, instead of adding more work to
+            manage an application
+          </p>
+        </div>
+        {/* programmatic approach */}
+        <div className="col-span-12 md:col-span-4 flex flex-col justify-center items-center">
+          <Image src={fairpricingicon} alt="msgicon" width={50} height={50} />
+          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] lg:mt-4 lg:mb-2">
+            Fair Pricing
+          </h4>
+          <p className="text-[#67748E] font-inter lg:leading-[24px] text-center">
+            Do you work alone? We don't limit our features to only the
+            highest-paid plan, unlike other booking systems.
+          </p>
+        </div>
+        {/* Easy and Fun */}
+        <div className="col-span-12 md:col-span-4 flex flex-col justify-center items-center">
+          <Image src={easypricingicon} alt="msgicon" width={50} height={50} />
+          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] lg:mt-4 lg:mb-2">
+            Easy and Fun
+          </h4>
+          <p className="text-[#67748E] font-inter lg:leading-[24px] text-center">
+            We make it fun and easy for your clients to book and manage their
+            appointments book and manage.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyChoosingUs;
