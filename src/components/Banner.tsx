@@ -3,8 +3,8 @@ import catmuche from '../../public/assets/images/catmuschehomebanner.png';
 
 const Banner = () => {
   return (
-    <section className="">
-      <div className="flex flex-row justify-center">
+    <section className="main-container">
+      <div className="flex flex-row justify-center lg:mb-6">
         <h1 className="lg:mt-20 capitalize lg:text-7xl lg:font-medium text-center lg:leading-[5.5rem]">
           designed by salon owner <br />
           for <span className="gradientText">Salon owners</span>
@@ -16,6 +16,22 @@ const Banner = () => {
           height={153}
           className="object-contain lg:-mt-28"
         />
+      </div>
+      <div className="lg:w-[838px] lg:mx-auto">
+        <p className="text-center text-[#666] font-roboto capitalize lg:tracking-[-0.205px] lg:mr-20">
+          Easy-to-use" and "best" software are slogans of the past. At Bookitu
+          we focus on solving real problems faced by salon owners every day. We
+          focused on what is needed and removed “nice to have” features to
+          create easy-to-use and efficient applications.{' '}
+        </p>
+      </div>
+      <div className="lg:mt-12 flex justify-center lg:gap-x-6">
+        <button className="bg-primary text-center rounded-lg lg:px-8 lg:py-[14px] text-white font-inter lg:tracking-[-0.205px]">
+          Get Started
+        </button>
+        <button className="bg-[#F6F6F6] text-[#67748E] text-center rounded-lg lg:px-8 lg:py-[14px] font-inter lg:tracking-[-0.205px]">
+          Learn More
+        </button>
       </div>
     </section>
   );
