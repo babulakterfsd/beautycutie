@@ -48,7 +48,7 @@ const FeatureAndCurious = () => {
           />
         </div>
         {/* curious text */}
-        <div className="col-span-12 lg:col-span-6">
+        <div className="col-span-12 lg:col-span-6 lg:ml-14">
           <h3 className="text-[#67748E] font-inter lg:font-medium capitalize lg:text-4xl lg:mb-6">
             Curious how it works?
           </h3>
@@ -59,6 +59,9 @@ const FeatureAndCurious = () => {
             Create an account in 30 sec and experience it yourself. <br /> No
             credit cards needed. No commitment.Free for 45 days
           </p>
+          <button className="bg-primary text-center rounded-lg lg:px-8 lg:py-[14px] text-white font-inter lg:tracking-[-0.205px] lg:mt-4">
+            Get Started
+          </button>
         </div>
       </div>
     </section>
