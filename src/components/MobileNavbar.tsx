@@ -16,8 +16,8 @@ import useAppContext from '.././hooks/useAppContext';
 const MobileNavbar = () => {
   const { isMenuOpen } = useAppContext();
   return (
-    <div className="overflow-x-hidden bg-gray-300">
-      <div className="">
+    <div className="overflow-x-hidden bg-white">
+      <div>
         <AnimatedMenubar />
       </div>
       <div className={`${isMenuOpen ? '' : ''}`}>
@@ -72,7 +72,7 @@ const AnimatedMenubar = () => {
 
   const genericHamburgerLine = `h-1 w-5 rounded-full my-1 bg-[#eb8817] transition ease transform duration-300`;
   return (
-    <div className="overflow-x-hidden flex justify-between items-center h-16 py-2 px-4 shadow-md fixed top-0 left-0 right-0">
+    <div className="overflow-x-hidden flex justify-between items-center h-16 py-2 px-4 shadow-sm">
       <Link href="/">
         <Image src={Logo} alt="logo" width={36} height={36} />
       </Link>

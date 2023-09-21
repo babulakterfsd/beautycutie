@@ -14,9 +14,7 @@ export default function RootLayout({
       <body>
         <AppContextProvider>
           <Navbar />
-          <div className="h-screen flex justify-center items-center">
-            {children}
-          </div>
+          <div className="mt-16 lg:mt-20 h-screen">{children}</div>
           <Footer />
         </AppContextProvider>
       </body>

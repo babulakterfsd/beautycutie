@@ -5,9 +5,9 @@ import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
   return (
-    <nav className=" text-gray-700 grid grid-cols-12 shadow-sm z-50 fixed top-0 left-0 right-0">
+    <div className=" text-gray-700 grid grid-cols-12 shadow-sm z-50 fixed top-0 left-0 right-0 bg-white">
       {/* mobile menu */}
-      <div className="col-span-12 md:hidden">
+      <div className="col-span-12 z-50 bg-white md:hidden">
         <MobileNavbar />
       </div>
       {/* desktop menu */}
@@ -71,7 +71,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
