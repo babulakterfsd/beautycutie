@@ -39,6 +39,27 @@ body {
   color: #475467;
 }
 
+
+/* gradients */
+/* gradients */
+.gradientText {
+  background: linear-gradient(269deg, #FFAAA5 27.81%, #A8DDE6 62.01%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* .gradientBg {
+  background: linear-gradient(
+    to right,
+    rgba(243, 130, 26, 1) 1.58%,
+    rgba(239, 120, 113, 1) 45.58%,
+    rgba(214, 53, 99, 1) 98.69%
+  );
+} */
+
+
+
 /* responsive classes */
 .main-container {
   @apply w-full mx-auto lg:px-2;

@@ -1,7 +1,9 @@
+import Banner from './Banner';
+
 const Home = () => {
   return (
     <section>
-      <h1 className="text-xl font-bold">Welcome to Bookitu</h1>
+      <Banner />
     </section>
   );
 };
