@@ -6,3 +6,12 @@
         background-position: -20px 150px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .featureandcuriousBg {
+        background: url('../../public/assets/images/verticlesnakearrow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 600px 0px;
+    }
+}

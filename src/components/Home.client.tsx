@@ -1,4 +1,5 @@
 import Banner from './Banner';
+import FeatureAndCurious from './FeatureAndCurious';
 import WhyChoosingUs from './WhyChoosingUs';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <section>
       <Banner />
       <WhyChoosingUs />
+      <FeatureAndCurious />
     </section>
   );
 };
