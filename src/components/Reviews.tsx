@@ -14,13 +14,13 @@ import 'swiper/css/pagination';
 
 const Reviews = () => {
   return (
-    <section className="lg:mt-52 main-container">
-      <h2 className="text-center text-cyan font-roboto lg:text-4xl lg:font-medium letterGap">
+    <section className="mt-24 lg:mt-52 main-container">
+      <h2 className="text-center text-cyan font-roboto text-3xl lg:text-4xl font-medium letterGap hidden md:block">
         Don't just take out only our words for it
       </h2>
-      <div className="grid grid-cols-12 gap-x-8 lg:mt-20 items-center">
+      <div className="grid grid-cols-12 lg:mt-20 items-center">
         {/* review slider */}
-        <div className="reviewslider col-span-12 lg:col-span-6 flex justify-center">
+        <div className="reviewslider col-span-12 lg:col-span-6 hidden md:flex justify-center pl-2.5 pr-1 mx-auto md:px-0 md:mx-0 my-4 md:my-0">
           <div className="swipercontainer w-full lg:w-4/5">
             <Swiper
               scrollbar
@@ -40,14 +40,14 @@ const Reviews = () => {
                   className="flex items-center justify-center w-full h-full"
                 >
                   <div className="flex flex-col">
-                    <div className="flex gap-x-0.5 lg:mb-10">
+                    <div className="flex gap-x-0.5 mb-4 lg:mb-10">
                       <Image src={staricon} alt="star icon" />
                       <Image src={staricon} alt="star icon" />
                       <Image src={staricon} alt="star icon" />
                       <Image src={staricon} alt="star icon" />
                       <Image src={staricon} alt="star icon" />
                     </div>
-                    <h2 className="text-cyan text-shadow font-inter lg:text-4xl lg:font-medium lg:leading-[52px] lg:tracking-[-.96px]">
+                    <h2 className="text-cyan text-shadow font-inter text-3xl lg:text-4xl lg:font-medium lg:leading-[52px] lg:tracking-[-.96px] w-[90vw] md:w-auto mb-6">
                       We've really sped up our workflow using{' '}
                       <span className="gradientText">Bookitu</span> and haven't
                       looked back.
@@ -76,7 +76,11 @@ const Reviews = () => {
         </div>
         {/* review image */}
         <div className="reviewimage col-span-12 lg:col-span-6">
-          <Image src={reviewimg} alt="review image" />
+          <Image
+            src={reviewimg}
+            alt="review image"
+            className="h-[400px] w-[90vw] md:h-[500px] md:w-[500px] object-contain mx-auto"
+          />
         </div>
       </div>
     </section>
