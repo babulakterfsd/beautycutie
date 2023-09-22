@@ -11,7 +11,9 @@ const Home = () => {
       <WhyChoosingUs />
       <FeatureAndCurious />
       <Reviews />
-      <NewsletterFull />
+      <div className="px-4 md:px-0">
+        <NewsletterFull />
+      </div>
     </section>
   );
 };

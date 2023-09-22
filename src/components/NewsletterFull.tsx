@@ -10,35 +10,40 @@ const NewsletterFull = () => {
 
   const formHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(`You have entered ${email}`);
+    alert(`You have entered ${email ? email : 'nothing'}`);
     setEmail('');
   };
 
   return (
-    <section className={`lg:mt-44 lg:w-full gradientBg`}>
+    <section
+      className={`mb-16 md:mb-0 lg:mt-44 lg:w-full gradientBg rounded-3xl md:rounded-none`}
+    >
       <div className="grid grid-cols-12">
         <div className="col-span-12 md:col-span-4 hidden md:block"></div>
-        <div className="col-span-12 md:col-span-4 flex justify-center items-center flex-col">
-          <h2 className="text-center text-cyan font-inter lg:text-3xl lg:font-semibold lg:leading-[44px] lg:tracking-[-.72px] lg:mb-5">
+        <div className="col-span-12 md:col-span-4 flex justify-center items-center flex-col px-7 md:px-0 py-10 md:py-0">
+          <h2 className="text-center text-cyan font-inter text-3xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] mb-4 lg:mb-5">
             Join our newsletter
           </h2>
-          <p className="text-cyan font-inter text-center lg:text-[1.2rem] lg:mb-10">
+          <p className="text-cyan font-inter text-center text-[1.2rem] mb-8  lg:mb-10">
             Be the first to know when new jobs are posted!
           </p>
-          <form className="flex lg:gap-x-4 self-start" onSubmit={formHandler}>
+          <form
+            className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 md:self-start"
+            onSubmit={formHandler}
+          >
             <div>
               <input
                 type="email"
                 id="email"
                 aria-describedby="helper-text-explanation"
-                className="bg-white text-cyan text-sm rounded-lg focus:outline-none w-full lg:w-[350px] lg:px-4 lg:py-3"
+                className="bg-white text-cyan text-sm rounded-lg focus:outline-none w-[280px] lg:w-[350px] p-4 md:p-3 font-semibold md:font-normal"
                 placeholder="Enter Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <p
                 id="helper-text-explanation"
-                className="mt-2 text-sm text-[#475467]"
+                className="mt-2 text-sm text-[#475467] hidden md:block"
               >
                 We care about your in our{' '}
                 <Link href="/" className="underline">
@@ -48,7 +53,13 @@ const NewsletterFull = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#A8DDE6] lg:h-[42px] flex items-center text-center rounded-lg lg:px-4 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold"
+              className="bg-[#A8DDE6] lg:h-[42px] hidden md:flex items-center text-center rounded-lg lg:px-4 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold "
+            >
+              Subscribe
+            </button>
+            <button
+              type="submit"
+              className="bg-[#FFAAA5] text-[1.1rem] md:hidden items-center text-center rounded-lg p-3 text-white font-inter font-semibold "
             >
               Subscribe
             </button>
