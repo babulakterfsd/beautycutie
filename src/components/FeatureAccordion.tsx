@@ -15,10 +15,10 @@ export default function FAccordion() {
     <div
       id="accordion-collapse"
       data-accordion="collapse"
-      className="lg:mt-6 lg:h-[350px]"
+      className="mt-6 lg:h-[350px]"
     >
       {accordionData.map((item, index) => (
-        <div key={index} className="lg:my-2">
+        <div key={index} className="my-3 lg:my-2 px-3 md:px-0">
           <h2 id={`accordion-collapse-heading-${index + 1}`}>
             <button
               type="button"
