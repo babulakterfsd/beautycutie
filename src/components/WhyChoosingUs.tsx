@@ -20,7 +20,7 @@ const WhyChoosingUs = () => {
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
           />
-          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] mt-4 mb-2">
+          <h4 className="text-[#67748E] font-inter font-semibold lg:leading-[30px] mt-4 mb-2">
             Pragmatic approach
           </h4>
           <p className="text-[#67748E] font-inter lg:leading-[24px] md:text-center">
@@ -35,7 +35,7 @@ const WhyChoosingUs = () => {
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
           />
-          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] mt-4 mb-2">
+          <h4 className="text-[#67748E] font-inter font-semibold lg:leading-[30px] mt-4 mb-2">
             Fair Pricing
           </h4>
           <p className="text-[#67748E] font-inter lg:leading-[24px] md:text-center">
@@ -50,7 +50,7 @@ const WhyChoosingUs = () => {
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
           />
-          <h4 className="text-[#67748E] font-inter lg:font-semibold lg:leading-[30px] mt-4 mb-2">
+          <h4 className="text-[#67748E] font-inter font-semibold lg:leading-[30px] mt-4 mb-2">
             Easy and Fun
           </h4>
           <p className="text-[#67748E] font-inter lg:leading-[24px] md:text-center">
