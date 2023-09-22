@@ -294,6 +294,13 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
+"@types/swiper@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@types/swiper/-/swiper-6.0.0.tgz#9934ecd569611b660a2a9bf200f25ce5ba4b4d63"
+  integrity sha512-QPZRgxZ+ivXXtzV43B3LxpXUIC7FE/EoKM+rtxngmgt2M7eeUYypZhyqZD8UxJtlBcUDw/ATGoVeSNpvBBrz2w==
+  dependencies:
+    swiper "*"
+
 "@typescript-eslint/parser@^5.4.2 || ^6.0.0":
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-6.7.0.tgz#332fe9c7ecf6783d3250b4c8a960bd4af0995807"
@@ -2396,6 +2403,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swiper@*, swiper@^10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-10.3.0.tgz#a9f4d54a1860d76c2f85d7f09e2248bfe5f770a4"
+  integrity sha512-o81KZH4phL/dJxKFWpZ/zf78QxOyFMood+c86vJJO0ZeSOoniyzV8HWDsw12KOlQdm4WRxrc/6kfGImAcxcS3w==
 
 synckit@^0.8.5:
   version "0.8.5"

@@ -41,6 +41,12 @@ body {
 .letterGap {
   letter-spacing: -0.205px;
 }
+.text-cyan {
+  color: #67748E;
+}
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
 
 
 /* gradients */
@@ -87,3 +93,31 @@ body {
     max-width: 1320px !important;
   }
 }
+
+
+/* swiper js */
+.swiper-wrapper {
+  position: relative !important;
+  padding-bottom: 50px !important;
+}
+
+ .swiper-pagination {
+  position: absolute !important;
+  bottom: 70px !important;
+  left: 120px !important;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+} 
+
+.swiper-pagination-bullet {
+  margin: 0px 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255,170,165,1) !important;
+  transform: scale(1.5) !important;
+} 
