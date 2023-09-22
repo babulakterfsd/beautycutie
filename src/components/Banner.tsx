@@ -8,7 +8,7 @@ const Banner = () => {
     <section className={`${Styles.bannerBg}`}>
       <div className="main-container">
         <div className="flex flex-row justify-center lg:pl-20 mb-4 lg:mb-6">
-          <h1 className="mt-6 lg:mt-20 capitalize font-inter text-4xl lg:text-7xl font-medium text-center lg:leading-[5.5rem]">
+          <h1 className="mt-8 lg:mt-20 capitalize font-inter text-4xl lg:text-7xl font-medium text-center lg:leading-[5.5rem]">
             designed by salon owner <br className="hidden lg:block" />
             for <span className="gradientText">Salon owners</span>
           </h1>
