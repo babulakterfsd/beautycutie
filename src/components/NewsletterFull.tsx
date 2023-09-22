@@ -28,7 +28,7 @@ const NewsletterFull = () => {
             Be the first to know when new jobs are posted!
           </p>
           <form
-            className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 md:self-start"
+            className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 md:self-start mt-3 md:mt-0"
             onSubmit={formHandler}
           >
             <div>
