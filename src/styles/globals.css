@@ -100,34 +100,24 @@ body {
   position: relative !important;
   padding-bottom: 50px !important;
 }
-
-@media screen and (max-width: 767px) {
-  .swiper-pagination {
-    position: absolute !important;
-    bottom: 70px !important;
-    left: 120px !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-pagination {
-    position: absolute !important;
-    bottom: 70px !important;
-    left: 120px !important;
-  }
-}
-
-
 .swiper-button-next,
 .swiper-button-prev {
   display: none !important;
-} 
+}
 
 .swiper-pagination-bullet {
   margin: 0px 5px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgba(255,170,165,1) !important;
+  background-color: rgba(255, 170, 165, 1) !important;
   transform: scale(1.5) !important;
-} 
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+      position: absolute !important;
+      bottom: 70px !important;
+      left: 120px !important;
+  }
+}
