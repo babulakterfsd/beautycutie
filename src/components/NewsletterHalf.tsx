@@ -21,7 +21,7 @@ const NewsletterHalf = () => {
       <div className="grid grid-cols-12">
         <div className="col-span-12 md:col-span-4 lg:col-span-2 hidden lg:block"></div>
         {/* main content */}
-        <div className="col-span-12 lg:col-span-6 flex justify-center items-center flex-col px-7 md:px-0 py-10 md:py-8 lg:py-0">
+        <div className="col-span-12 lg:col-span-6 flex justify-center items-center flex-col px-7 md:px-0 py-10 md:py-8 lg:py-0 lg:ml-32">
           <h2 className="text-center text-cyan font-inter text-3xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] mb-4 lg:mb-5">
             Join our newsletter
           </h2>

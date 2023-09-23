@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import getintouchimg from '../../public/assets/images/getintouch.png';
+import getintouch2img from '../../public/assets/images/getintouch2smallicon.png';
 import visionimg from '../../public/assets/images/ourvisiondesktop.png';
 import ultasurjo from '../../public/assets/images/ultashurjo.png';
+import ContactForm from './ContactForm';
 import NewsletterHalf from './NewsletterHalf';
 
 const About = () => {
@@ -60,7 +63,7 @@ const About = () => {
           perfectionist and enjoying the interaction with clients, usually comes
           with a dislike for using computer. These are only a few difficulties
           of running a business like a hairdressing salon. Sadly a lot of people
-          don’t think of our business type to be so challenging. But we know it.
+          don't think of our business type to be so challenging. But we know it.
           We have experience it. And our goal is to make your life easier, to
           make our businesses more profitable and to help you take a bigger
           share home weather you are a one man business or a multi-location.
@@ -69,6 +72,31 @@ const About = () => {
       {/* newsletter section */}
       <div className="px-6 md:px-16 lg:px-32 py-12">
         <NewsletterHalf />
+      </div>
+      {/* contact section */}
+      <div className="grid grid-cols-12 -mt-16 md:mt-10 lg:mt-28 px-4 lg:px-2">
+        <div className="col-span-12 md:col-span-3 relative">
+          <Image
+            src={getintouchimg}
+            alt="Get in touch"
+            className="object-cover lg:w-[431px]"
+          />
+          <Image
+            src={getintouch2img}
+            alt="Get in touch"
+            className="md:hidden absolute -bottom-20 left-52"
+          />
+        </div>
+        <div className="col-span-12 md:col-span-6 mt-6 lg:mb-16">
+          <ContactForm />
+        </div>
+        <div className="col-span-12 md:col-span-3">
+          <Image
+            src={getintouch2img}
+            alt="Get in touch"
+            className="hidden md:block md:-ml-36 lg:ml-0 lg:mt-60"
+          />
+        </div>
       </div>
     </section>
   );
