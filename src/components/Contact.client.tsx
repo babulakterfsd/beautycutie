@@ -4,6 +4,7 @@ import Phone from '../../public/assets/images/contactphone.png';
 import GetInTouch from '../../public/assets/images/getintouch.png';
 import Email from '../../public/assets/images/pricemailicon.png';
 import ContactForm from './ContactForm';
+import NewsletterFull from './NewsletterFull';
 
 const Contact = () => {
   return (
@@ -16,7 +17,7 @@ const Contact = () => {
                 <p className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary text-center">
                   Contact Us
                 </p>
-                <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan">
+                <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan mt-3">
                   We’d love to hear from you
                 </h1>
                 <p className="text-sm leading-7 lg:text-xl lg:leading-7 font-inter font-normal text-center text-cyan mt-3">
@@ -109,6 +110,9 @@ const Contact = () => {
           </div>
           {/* contact form */}
           <ContactForm />
+        </div>
+        <div className="px-4 md:px-0">
+          <NewsletterFull />
         </div>
       </section>
     </>

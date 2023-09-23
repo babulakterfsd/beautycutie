@@ -6,7 +6,7 @@ const ContactForm = () => {
           <p className="text-base leading-6 font-semibold font-inter text-primary text-center">
             Contact Us
           </p>
-          <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan">
+          <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan mt-3">
             Get in touch
           </h1>
           <p className="text-xl leading-7 font-inter font-normal text-center text-cyan mt-3">

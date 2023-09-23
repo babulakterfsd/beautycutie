@@ -12,17 +12,17 @@ const Navbar = () => {
       </div>
       {/* desktop menu */}
       <div className="hidden main-container md:flex items-center justify-between p-4 col-span-12 ">
-        <div className="flex order-2 lg:gap-x-8">
+        <div className="flex order-2 gap-x-4 lg:gap-x-8">
           <button
             aria-label="Login"
             type="button"
-            className={`${Styles.hanimation} font-inter lg:font-semibold lg:leading-[24px]`}
+            className={`${Styles.hanimation} font-inter font-semibold leading-[24px]`}
           >
             Log in
           </button>
           <button
             type="button"
-            className="text-white bg-primary lg:px-5 lg:py-3 lg:rounded-md font-inter font-semibold lg:leading-[24px]"
+            className="text-white bg-primary px-5 py-3 rounded-md font-inter font-semibold leading-[24px]"
           >
             Sign up
           </button>
