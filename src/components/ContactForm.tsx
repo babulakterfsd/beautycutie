@@ -13,7 +13,7 @@ const ContactForm = () => {
             We'd love to hear from you. Please fill out this form.
           </p>
         </div>
-        <form action="" className="mb-16 lg:mb-24">
+        <form action="" className="mb-16 md:mb-24 lg:mb-0">
           <div className="md:flex md:justify-between md:space-x-4">
             <div className="mb-4 md:w-1/2">
               <label
