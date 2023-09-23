@@ -20,7 +20,7 @@ const Reviews = () => {
       </h2>
       <div className="grid grid-cols-12 lg:mt-20 items-center">
         {/* review slider */}
-        <div className="reviewslider col-span-12 lg:col-span-6 hidden md:flex justify-center pl-2.5 pr-1 mx-auto md:px-0 md:mx-0 my-4 md:my-0">
+        <div className="reviewslider col-span-12 lg:col-span-6 flex justify-center pl-2.5 pr-1 mx-auto md:px-0 md:mx-0 my-4 md:my-0">
           <div className="swipercontainer w-full lg:w-4/5">
             <Swiper
               scrollbar
