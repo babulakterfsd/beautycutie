@@ -13,7 +13,7 @@ const FeatureAndCurious = () => {
     >
       <div className="features grid grid-cols-12 justify-center">
         {/* feature text */}
-        <div className="col-span-12 lg:col-span-6 lg:pl-24">
+        <div className="col-span-12 lg:col-span-6 md:px-16 lg:pl-24">
           <h3 className="text-[#67748E] font-inter font-medium capitalize text-3xl lg:text-4xl mb-4 text-center md:text-left">
             Features
           </h3>
@@ -32,7 +32,7 @@ const FeatureAndCurious = () => {
             alt="bluish feature image"
             width={700}
             height={500}
-            className="object-contain  lg:absolute lg:-right-24 mt-6 md:mt-0 px-3 md:px-0"
+            className="object-contain  lg:absolute lg:-right-24 mt-6 px-3 md:px-16 md:mx-auto lg:mx-0 lg:px-0 md:mt-6 lg:mt-0"
           />
         </div>
       </div>
@@ -44,11 +44,11 @@ const FeatureAndCurious = () => {
             alt="reddish feature image"
             width={700}
             height={500}
-            className="object-contain mt-10 md:mt-0 px-3 md:px-0"
+            className="object-contain mt-10 px-3 md:px-16 lg:px-0 md:mt-16 lg:mt-0 md:mx-auto lg:mx-0"
           />
         </div>
         {/* curious text */}
-        <div className="col-span-12 lg:col-span-6 lg:ml-14 order-first md:order-none">
+        <div className="col-span-12 lg:col-span-6 lg:ml-14 order-first lg:order-none md:px-16 lg:px-0 md:mt-16 lg:mt-0">
           <h3 className="text-[#67748E] font-inter font-medium capitalize text-3xl lg:text-4xl mb-4 lg:mb-6 mt-12 md:mt-0 text-center md:text-left">
             Curious how it works?
           </h3>

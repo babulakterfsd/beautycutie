@@ -9,7 +9,7 @@ const WhyChoosingUs = () => {
       <h2 className="text-[#67748E] text-center font-inter text-3xl font-semibold capitalize letterGap md:hidden">
         Why choose us?
       </h2>
-      <h2 className="text-[#67748E] text-center font-roboto lg:text-4xl font-medium capitalize letterGap hidden md:block">
+      <h2 className="text-[#67748E] text-center font-roboto md:text-2xl lg:text-4xl font-medium capitalize letterGap hidden md:block">
         Why Choosing <span>Bookitu</span> Over Other Booking Systems?
       </h2>
       <div className="mt-12 lg:mt-20  grid grid-cols-12 gap-y-5 lg:gap-x-8">
