@@ -11,7 +11,7 @@ const Contact = () => {
     <>
       <section id="contact_breadcrumbs">
         <div className="main-container">
-          <div className="py-16 lg:py-24">
+          <div className="py-16 lg:py-24 lg:pb-0">
             <div className="flex justify-center">
               <div>
                 <p className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary text-center">

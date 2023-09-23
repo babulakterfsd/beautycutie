@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="grid grid-cols-12 gap-y-12 bg-[#67748E] px-2 pb-4 pt-16 md:px-16 md:pt-16 lg:gap-x-2 xl:px-40">
+      <footer className="grid grid-cols-12 gap-y-12 bg-[#67748E] px-2 pb-4 pt-16 md:px-8 lg:px-16 md:pt-16 lg:gap-x-2 xl:px-40">
         <div className="col-span-12 grid grid-cols-12 justify-around gap-y-12 px-1 lg:gap-x-8 lg:px-0 text-secondary">
           {/* first part */}
           <div className="col-span-6 flex flex-col gap-4 md:col-span-3">
