@@ -68,6 +68,15 @@ const Navbar = () => {
                 Pricing
               </Link>
             </li>
+            <li>
+              <Link
+                href="/contact"
+                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                aria-current="page"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

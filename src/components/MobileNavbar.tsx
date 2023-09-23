@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  faContactBook,
   faDollarSign,
   faHouse,
   faProjectDiagram,
@@ -61,6 +62,12 @@ const MobileMenu = () => {
         <span className="flex gap-x-4 items-center text-gray-700">
           <FontAwesomeIcon icon={faDollarSign} />
           <span className="uppercase font-medium">Pricing</span>
+        </span>
+      </Link>
+      <Link href="/contact" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span className="flex gap-x-4 items-center text-gray-700">
+          <FontAwesomeIcon icon={faContactBook} />
+          <span className="uppercase font-medium">Contact</span>
         </span>
       </Link>
     </div>
