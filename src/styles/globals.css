@@ -24,16 +24,16 @@ body {
 
 /* common classes */
 .text-primary {
-  color: rgba(255,170,165,1)
+  color: rgba(255, 170, 165, 1);
 }
 .bg-primary {
-  background-color: rgba(255,170,165,1)
+  background-color: rgba(255, 170, 165, 1);
 }
 .text-secondary {
-  color: rgba(168, 221, 230, 1)
+  color: rgba(168, 221, 230, 1);
 }
 .bg-secondary {
-  background-color: rgba(168, 221, 230, 1)
+  background-color: rgba(168, 221, 230, 1);
 }
 .text-black {
   color: #475467;
@@ -42,27 +42,24 @@ body {
   letter-spacing: -0.205px;
 }
 .text-cyan {
-  color: #67748E;
+  color: #67748e;
 }
 .text-shadow {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 /* gradients */
 /* gradients */
 .gradientText {
-  background: linear-gradient(269deg, #FFAAA5 27.81%, #A8DDE6 62.01%);
+  background: linear-gradient(269deg, #ffaaa5 27.81%, #a8dde6 62.01%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .gradientBg {
-  background: linear-gradient(248deg, #A8DDE6 0.94%, #FFA5A5 100%);
+  background: linear-gradient(248deg, #a8dde6 0.94%, #ffa5a5 100%);
 }
-
-
 
 /* responsive classes */
 .main-container {
@@ -94,7 +91,6 @@ body {
   }
 }
 
-
 /* swiper js */
 .swiper-wrapper {
   position: relative !important;
@@ -116,8 +112,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .swiper-pagination {
-      position: absolute !important;
-      bottom: 70px !important;
-      left: 120px !important;
+    position: absolute !important;
+    bottom: 70px !important;
+    left: 120px !important;
   }
 }
