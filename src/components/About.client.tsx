@@ -47,7 +47,7 @@ const About = () => {
         <Image
           src={visionimg}
           alt="Vision"
-          className="object-contain w-full hidden lg:block px-24 my-10"
+          className="object-contain w-full hidden lg:block px-32 my-10"
         />
         <p className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto">
           Running a service oriented business that works on appointments is hell
