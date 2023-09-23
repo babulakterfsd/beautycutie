@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import visionimg from '../../public/assets/images/ourvisiondesktop.png';
 import ultasurjo from '../../public/assets/images/ultashurjo.png';
+import NewsletterHalf from './NewsletterHalf';
 
 const About = () => {
   return (
@@ -64,6 +65,10 @@ const About = () => {
           make our businesses more profitable and to help you take a bigger
           share home weather you are a one man business or a multi-location.
         </p>
+      </div>
+      {/* newsletter section */}
+      <div className="px-6 md:px-16 lg:px-32 py-12">
+        <NewsletterHalf />
       </div>
     </section>
   );
