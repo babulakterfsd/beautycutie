@@ -128,7 +128,7 @@ const SingleBlogPost = () => {
       </div>
       {/* author */}
       <div className="main-container grid grid-cols-12">
-        <div className="col-span-12 md:col-span-10 md:col-start-2 rounded-lg py-8 px-14 gradientBgReverse flex gap-x-5 md:mt-3 lg:mt-6 mb-10">
+        <div className="col-span-12 md:col-span-10 md:col-start-2 rounded-lg px-4 py-6 md:py-8 md:px-10 lg:px-16 gradientBgReverse flex flex-col md:flex-row gap-x-5 md:mt-3 lg:mt-6 mb-10">
           <Image src={author} alt="author" className="self-start" />
           <div className="flex flex-col">
             <h5 className="text-cyan text-2xl font-medium font-inter">
