@@ -138,7 +138,7 @@ const Blog = () => {
                       activeCategory === categoryName
                         ? 'text-primary bg-gray-100 py-3'
                         : 'text-cyan'
-                    }  font-inter font-semibold cursor-pointer px-2`}
+                    }  font-inter font-bold md:font-semibold cursor-pointer px-2`}
                     onClick={() => setActiveCategory(categoryName)}
                   >
                     {categoryName}

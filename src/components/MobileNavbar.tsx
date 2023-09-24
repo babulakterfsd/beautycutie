@@ -66,16 +66,16 @@ const MobileMenu = () => {
           <span className="uppercase font-[700]">Pricing</span>
         </span>
       </Link>
-      <Link href="/contact" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-primary">
-          <FontAwesomeIcon icon={faContactBook} />
-          <span className="uppercase font-[700]">Contact</span>
-        </span>
-      </Link>
       <Link href="/blog" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faBlog} />
           <span className="uppercase font-[700]">Blog</span>
+        </span>
+      </Link>
+      <Link href="/contact" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span className="flex gap-x-4 items-center text-primary">
+          <FontAwesomeIcon icon={faContactBook} />
+          <span className="uppercase font-[700]">Contact</span>
         </span>
       </Link>
     </div>
