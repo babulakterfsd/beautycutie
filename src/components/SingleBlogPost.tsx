@@ -166,7 +166,7 @@ const SingleBlogPost = () => {
                 All useful information for beauty industry
               </p>
             </div>
-            <Link href="/blog">
+            <Link href="/blog" className="hidden md:inline-block">
               <button className="bg-primary text-white font-inter font-normal py-3 px-5 rounded focus:outline-none focus:shadow-outline mt-2">
                 View all posts
               </button>
@@ -183,8 +183,8 @@ const SingleBlogPost = () => {
                   <Image
                     src={rpost.Image}
                     alt="recent"
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                     className="mb-7"
                   />
                   <p className="text-[#3acce9] mb-3 font-roboto">{`${rpost.type}`}</p>
