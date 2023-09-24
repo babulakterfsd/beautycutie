@@ -162,7 +162,12 @@ const Blog = () => {
                     {blog.content}
                   </p>
                   <p className="mt-4">
-                    <Link href="/blog" className="text-primary font-semibold">
+                    <Link
+                      href={`/blog/${blog.id}/${blog.title
+                        .replace(/\s/g, '-')
+                        .toLowerCase()}`}
+                      className="text-primary font-semibold"
+                    >
                       Read Post{' '}
                       <span className="transform -rotate-45 origin-center inline-block">
                         <FontAwesomeIcon icon={faArrowRight} />
