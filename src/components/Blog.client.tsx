@@ -1,6 +1,8 @@
 'use client';
 
 import { BlogData } from '@/lib/BlogData';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -163,7 +165,7 @@ const Blog = () => {
                     <Link href="/blog" className="text-primary font-semibold">
                       Read Post{' '}
                       <span className="transform -rotate-45 origin-center inline-block">
-                        →
+                        <FontAwesomeIcon icon={faArrowRight} />
                       </span>
                     </Link>
                   </p>
@@ -171,6 +173,41 @@ const Blog = () => {
               );
             })}
           </div>
+        </div>
+      </div>
+      {/* after blog cards contents */}
+      <div className="main-container mb-16">
+        <hr className="w-full bg-gray-200" />
+        {/* pagination tabs and desktop */}
+        <div className="hidden md:flex justify-between items-center mt-4">
+          <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+            <FontAwesomeIcon icon={faArrowLeft} className="mr-2" /> Previous
+          </button>
+          <div className="flex gap-x-3">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => {
+              return (
+                <button
+                  key={item}
+                  className="bg-gray-200 w-8 h-8 rounded-md flex items-center justify-center"
+                >
+                  {item}
+                </button>
+              );
+            })}
+          </div>
+          <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+            Next <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+          </button>
+        </div>
+        {/* pagination mobile */}
+        <div className="flex md:hidden justify-between items-center mt-4">
+          <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
+          <p className="text-cyan font-semibold">Page 1 of 9</p>
+          <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
       </div>
     </section>
