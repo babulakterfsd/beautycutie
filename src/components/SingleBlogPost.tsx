@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import author from '../../public/assets/images/author.png';
 import fb from '../../public/assets/images/fb.png';
 import insta from '../../public/assets/images/insta.png';
 import linkedin from '../../public/assets/images/linkedin.png';
@@ -125,6 +126,30 @@ const SingleBlogPost = () => {
           </p>
         </div>
       </div>
+      {/* author */}
+      <div className="main-container grid grid-cols-12">
+        <div className="col-span-12 md:col-span-10 md:col-start-2 rounded-lg py-8 px-14 gradientBgReverse flex gap-x-5 md:mt-3 lg:mt-6 mb-10">
+          <Image src={author} alt="author" className="self-start" />
+          <div className="flex flex-col">
+            <h5 className="text-cyan text-2xl font-medium font-inter">
+              Olivia Rhye
+            </h5>
+            <p className="text-[#795151] font-medium text-sm mb-4 font-inter">
+              Content and marketing team
+            </p>
+            <p className="font-inter text-cyan lg:text-[18px]">
+              Sagittis et eu at elementum, quis in. Proin praesent volutpat
+              egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac.
+              Auctor rutrum lacus malesuada massa ornare et. Vulputate
+              consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu
+              sit dignissim massa erat cursus vulputate gravida id. Sed quis
+              auctor vulputate hac elementum gravida cursus dis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* newsletter */}
       <div className="px-4 md:px-0">
         <NewsletterFull />
       </div>

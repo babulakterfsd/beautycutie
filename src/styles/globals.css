@@ -60,6 +60,9 @@ body {
 .gradientBg {
   background: linear-gradient(248deg, #a8dde6 0.94%, #ffa5a5 100%);
 }
+.gradientBgReverse {
+  background: linear-gradient(248deg, #ffa5a5 0.94%, #a8dde6 100%);
+}
 
 /* responsive classes */
 .main-container {
