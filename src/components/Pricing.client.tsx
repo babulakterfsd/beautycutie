@@ -80,7 +80,7 @@ const Pricing = () => {
             {/* still help */}
             <div className="flex flex-col lg:flex-row p-8 bg-gray-50 rounded-2xl justify-start lg:justify-between lg:items-center mt-8">
               <div className="flex-col justify-start items-start gap-2 inline-flex">
-                <div className="self-stretch text-cyan text-xl font-semibold font-inter leading-[30px]">
+                <div className="self-stretch text-cyan text-lg md:text-xl font-bold md:font-semibold font-inter leading-[30px]">
                   Still have questions?
                 </div>
                 <div className=" text-cyan text-lg font-normal font-inter leading-7">
