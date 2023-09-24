@@ -151,7 +151,7 @@ const SingleBlogPost = () => {
       </div>
 
       {/* recent posts */}
-      <div className="py-16 lg:py-24 bg-gray-50 mt-12">
+      <div className="py-16 lg:py-24 bg-gray-50 mt-12 lg:-mb-44">
         <div className="main-container">
           {/* header */}
           <div className="header flex justify-between items-start">
@@ -215,6 +215,13 @@ const SingleBlogPost = () => {
                 </div>
               );
             })}
+            <div className="pl-2 md:hidden">
+              <Link href="/blog">
+                <button className="bg-primary text-white font-inter font-normal py-3 px-5 rounded focus:outline-none focus:shadow-outline w-[320px]">
+                  View all posts
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
