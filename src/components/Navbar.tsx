@@ -31,7 +31,7 @@ const Navbar = () => {
           className="items-center justify-between hidden w-full md:flex md:w-auto order-1"
           id="navbar-cta"
         >
-          <ul className="flex flex-col md:flex-row font-semibold p-4 md:p-0 mt-4  md:space-x-8 md:mt-0">
+          <ul className="flex flex-col md:flex-row font-semibold p-4 md:p-0 mt-4 md:space-x-4 lg:space-x-8 md:mt-0">
             <li>
               <Link
                 href="/"
@@ -39,15 +39,6 @@ const Navbar = () => {
                 aria-current="page"
               >
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/features"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
-                aria-current="page"
-              >
-                Features
               </Link>
             </li>
             <li>
@@ -61,11 +52,29 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                href="/features"
+                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                aria-current="page"
+              >
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/pricing"
                 className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                aria-current="page"
+              >
+                Blog
               </Link>
             </li>
             <li>

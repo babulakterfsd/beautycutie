@@ -91,20 +91,30 @@ const FeaturePricing = () => {
             <div className=" flex justify-center">
               <div className="bg-white rounded-2xl shadow-md border border-gray-200 w-full md:w-[576px]">
                 <div className="flex flex-col-reverse justify-between lg:flex-row p-2 lg:p-8 pb-6 border-b border-gray-200">
-                  <div className="text-cyan text-2xl font-semibold font-inter leading-loose">
+                  <div className="text-cyan text-2xl font-semibold font-inter leading-loose mt-2">
                     Squad
-                    <span className="px-2.5 py-0.5 text-primary text-sm font-medium leading-tight bg-purple-50 rounded-2xl font-inter">
+                    <span className="hidden lg:inline-block ml-2 px-2.5 py-0.5 text-primary text-sm font-medium leading-tight bg-purple-50 rounded-2xl font-inter">
                       Popular
                     </span>
-                    <div className="text-cyan text-base font-normal font-inter leading-normal">
+                    <div className="text-cyan text-base font-normal font-inter leading-normal -mt-2 lg:mt-0 lg:hidden">
                       Our most popular plan for small teams.
+                    </div>
+                    <div className="text-cyan text-base font-normal font-inter leading-normal -mt-2 lg:mt-0 hidden lg:inline-block">
+                      Our most popular plan for team players.
                     </div>
                   </div>
                   <div className="flex justify-start items-end gap-0.5 text-cyan text-base font-normal leading-normal">
                     <div className="pb-5 flex-col justify-start items-start gap-2.5">
-                      <div className="text-cyan text-4xl font-semibold">$</div>
+                      <div className="text-cyan text-4xl font-semibold relative top-4">
+                        $
+                      </div>
                     </div>
-                    <div className="text-cyan text-5xl font-semibold">43.5</div>
+                    <div className="lg:hidden text-cyan text-5xl font-semibold">
+                      10
+                    </div>
+                    <div className="hidden lg:block text-cyan text-5xl font-semibold">
+                      43.5
+                    </div>
                     <div className="pb-2 justify-start items-start">
                       <div className="text-cyan text-base font-medium leading-normal">
                         per month
@@ -113,16 +123,19 @@ const FeaturePricing = () => {
                   </div>
                 </div>
                 <div className="p-8 pb-10 border-b border-gray-200">
-                  <div className="text-cyan text-base font-semibold leading-normal">
+                  <div className="text-cyan text-base font-bold leading-normal">
                     FEATURES
                   </div>
                   <div className="text-cyan text-base font-normal leading-normal">
                     Everything in our{' '}
-                    <span className="font-semibold">free plan</span> plus....
+                    <span className="font-bold lg:font-semibold">
+                      free plan
+                    </span>{' '}
+                    plus....
                   </div>
 
                   {/* feature item */}
-                  <div className="mt-6 flex lg:flex-row flex-col justify-between gap-4">
+                  <div className="mt-6 flex lg:flex-row flex-col justify-between lg:gap-4">
                     <div>
                       <div className="flex mb-4">
                         <div className="w-6 h-6 rounded-xl flex justify-center items-center">

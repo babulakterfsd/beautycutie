@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  faBlog,
   faContactBook,
   faDollarSign,
   faHouse,
@@ -36,38 +37,44 @@ const MobileMenu = () => {
     <div
       className={` ${
         isMenuOpen
-          ? 'duration-1000 h-screen flex justify-center items-start flex-col gap-y-8 overflow-x-hidden pl-[35vw]'
+          ? 'duration-1000 h-screen flex justify-center items-start flex-col gap-y-8 overflow-x-hidden pl-[36vw] -mt-12'
           : 'w-0 h-0 duration-300'
       }`}
     >
       <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-gray-700">
+        <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faHouse} />
-          <span className="uppercase font-medium">Home</span>
+          <span className="uppercase font-[700]">Home</span>
         </span>
       </Link>
       <Link href="/features" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-gray-700">
+        <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faProjectDiagram} />
-          <span className="uppercase font-medium">Features</span>
+          <span className="uppercase font-[700]">Features</span>
         </span>
       </Link>
       <Link href="/about" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-gray-700">
+        <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faUser} />
-          <span className="uppercase font-medium">About Us</span>
+          <span className="uppercase font-[700]">About Us</span>
         </span>
       </Link>
       <Link href="/pricing" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-gray-700">
+        <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faDollarSign} />
-          <span className="uppercase font-medium">Pricing</span>
+          <span className="uppercase font-[700]">Pricing</span>
         </span>
       </Link>
       <Link href="/contact" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-gray-700">
+        <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faContactBook} />
-          <span className="uppercase font-medium">Contact</span>
+          <span className="uppercase font-[700]">Contact</span>
+        </span>
+      </Link>
+      <Link href="/blog" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span className="flex gap-x-4 items-center text-primary">
+          <FontAwesomeIcon icon={faBlog} />
+          <span className="uppercase font-[700]">Blog</span>
         </span>
       </Link>
     </div>
