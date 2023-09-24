@@ -1,9 +1,18 @@
 'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import Styles from '../styles/navbar.module.css';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const [activePath, setActivePath] = useState(pathname);
+
+  useEffect(() => {
+    setActivePath(pathname);
+  }, [pathname]);
+
   return (
     <div className=" text-gray-700 grid grid-cols-12 shadow-sm z-50 fixed top-0 left-0 right-0 bg-white">
       {/* mobile menu */}
@@ -35,7 +44,11 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${
+                  activePath === '/home' || activePath === '/'
+                    ? 'text-primary'
+                    : ''
+                } ${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Home
@@ -44,7 +57,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/about"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${activePath === '/about' ? 'text-primary' : ''} ${
+                  Styles.hanimation
+                } p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 About Us
@@ -53,7 +68,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/features"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${
+                  activePath === '/features' ? 'text-primary' : ''
+                } ${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Features
@@ -62,7 +79,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/pricing"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${
+                  activePath === '/pricing' ? 'text-primary' : ''
+                } ${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Pricing
@@ -71,7 +90,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/blog"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${activePath === '/blog' ? 'text-primary' : ''} ${
+                  Styles.hanimation
+                } p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Blog
@@ -80,7 +101,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact"
-                className={`${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
+                className={`${
+                  activePath === '/contact' ? 'text-primary' : ''
+                } ${Styles.hanimation} p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
                 Contact
