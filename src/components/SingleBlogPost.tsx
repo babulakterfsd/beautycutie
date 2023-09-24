@@ -6,6 +6,7 @@ import linkedin from '../../public/assets/images/linkedin.png';
 import singleblogimg from '../../public/assets/images/singleblogimg.png';
 import singleblogimgmob from '../../public/assets/images/singleblogimgmob.png';
 import twitter from '../../public/assets/images/twitter.png';
+import NewsletterFull from './NewsletterFull';
 
 const SingleBlogPost = () => {
   return (
@@ -61,7 +62,7 @@ const SingleBlogPost = () => {
       />
       {/* content */}
       <div className="main-container grid grid-cols-12">
-        <div className="col-span-12 md:col-span-8 lg:col-span-6 md:col-start-3 lg:col-start-4 mb-6 lg:mb-16 flex justify-center flex-col gap-y-6">
+        <div className="col-span-12 md:col-span-8 lg:col-span-6 md:col-start-3 lg:col-start-4 mb-10 flex justify-center flex-col gap-y-6">
           <h3 className="text-cyan text-3xl lg:text-4xl font-medium">
             Lorem ipsum dolor sit amet
           </h3>
@@ -123,6 +124,9 @@ const SingleBlogPost = () => {
             orci.
           </p>
         </div>
+      </div>
+      <div className="px-4 md:px-0">
+        <NewsletterFull />
       </div>
     </section>
   );
