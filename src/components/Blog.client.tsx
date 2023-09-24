@@ -209,6 +209,32 @@ const Blog = () => {
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
+        {/* free trial section */}
+        <div className="px-4 py-8 md:p-8 lg:p-16 bg-gray-200 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start rounded-xl mt-20 lg:mt-24">
+          <div>
+            <h3 className="font-inter text-cyan text-3xl md:text-2xl lg:text-3xl font-semibold lg:leading-[38px] mb-4 md:mb-2 lg:mb-4">
+              Start your <span className="hidden md:inline-block">30-day</span>{' '}
+              free trial
+            </h3>
+            <p className="font-inter text-cyan text-[1.2rem] lg:leading-[30px] w-[300px] lg:w-auto">
+              Join over 4,000+ startups already growing with Untitled.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row gap-x-3 gap-y-2 items-start mt-12 md:mt-0">
+            <button
+              className="bg-[#F6F6F6] text-cyan font-medium font-inter py-2 lg:py-3 px-3 lg:px-5 rounded-md focus:outline-none focus:shadow-outline w-[300px] md:w-auto border border-gray-400 md:border-none"
+              type="button"
+            >
+              Learn More
+            </button>
+            <button
+              className="bg-primary text-white font-medium font-inter py-2 lg:py-3 px-3 lg:px-5 rounded-md focus:outline-none focus:shadow-outline w-[300px] md:w-auto order-first md:order-none"
+              type="button"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

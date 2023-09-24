@@ -90,13 +90,13 @@ const Feature = () => {
 
               <div className="flex flex-col lg:flex-row gap-4 mt-10">
                 <button
-                  className="bg-[#F6F6F6] text-cyan font-normal font-inter py-3 px-5 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-[#F6F6F6] text-cyan font-normal font-inter py-3 px-5 rounded-md focus:outline-none focus:shadow-outline"
                   type="button"
                 >
                   Learn More
                 </button>
                 <button
-                  className="bg-primary text-white font-normal font-inter py-3 px-5 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-primary text-white font-normal font-inter py-3 px-5 rounded-md focus:outline-none focus:shadow-outline"
                   type="button"
                 >
                   Get Started
