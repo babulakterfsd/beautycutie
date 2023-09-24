@@ -155,7 +155,7 @@ const Blog = () => {
               return (
                 <div className="col-span-12 md:col-span-6" key={blog.id}>
                   <Image src={blog.image} alt={blog.title} />
-                  <h4 className="text-cyan font-inter lg:text-[1.5rem] font-semibold lg:leading-[32px] mt-5 md:mt-8">
+                  <h4 className="text-cyan font-inter lg:text-[1.5rem] font-bold md:font-semibold lg:leading-[32px] mt-5 md:mt-8">
                     {blog.title}
                   </h4>
                   <p className="text-cyan font-inter lg:leading-[24px] mt-3 md:mt-4">
@@ -204,7 +204,7 @@ const Blog = () => {
           <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
             <FontAwesomeIcon icon={faArrowLeft} />
           </button>
-          <p className="text-cyan font-semibold">Page 1 of 9</p>
+          <p className="text-cyan font-bold md:font-semibold">Page 1 of 9</p>
           <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
