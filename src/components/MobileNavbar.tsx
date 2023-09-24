@@ -12,6 +12,7 @@ import Link from 'next/link';
 // import babul_akter from '../../public/assets/images/babul_akter_mobile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import Logo from '../../public/assets/images/logo.png';
 import useAppContext from '.././hooks/useAppContext';
 
@@ -47,16 +48,16 @@ const MobileMenu = () => {
           <span className="uppercase font-[700]">Home</span>
         </span>
       </Link>
-      <Link href="/features" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-primary">
-          <FontAwesomeIcon icon={faProjectDiagram} />
-          <span className="uppercase font-[700]">Features</span>
-        </span>
-      </Link>
       <Link href="/about" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faUser} />
           <span className="uppercase font-[700]">About Us</span>
+        </span>
+      </Link>
+      <Link href="/features" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span className="flex gap-x-4 items-center text-primary">
+          <FontAwesomeIcon icon={faProjectDiagram} />
+          <span className="uppercase font-[700]">Features</span>
         </span>
       </Link>
       <Link href="/pricing" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -87,9 +88,13 @@ const AnimatedMenubar = () => {
   const genericHamburgerLine = `h-1 w-5 rounded-full my-1 bg-[#eb8817] transition ease transform duration-300`;
   return (
     <div className="overflow-x-hidden flex justify-between items-center h-16 py-2 px-4 shadow-sm">
-      <Link href="/">
-        <Image src={Logo} alt="logo" width={36} height={36} />
-      </Link>
+      <div className="flex gap-x-1 items-center">
+        <Link href="/" title="Back to Home">
+          <Image src={Logo} alt="logo" width={36} height={36} />
+        </Link>
+        <MenubarTitle />
+      </div>
+
       <button
         name="mobilemenu"
         aria-label="mobile menu"
@@ -118,4 +123,24 @@ const AnimatedMenubar = () => {
       </button>
     </div>
   );
+};
+
+const MenubarTitle = () => {
+  const pathname = usePathname();
+
+  if (pathname === '/') {
+    return <span className="font-bold text-xl gradientText">Bookitu</span>;
+  } else if (pathname === '/about') {
+    return <span className="font-bold text-xl gradientText">About</span>;
+  } else if (pathname === '/blog') {
+    return <span className="font-bold text-xl gradientText">Blog</span>;
+  } else if (pathname === '/contact') {
+    return <span className="font-bold text-xl gradientText">Contact</span>;
+  } else if (pathname === '/features') {
+    return <span className="font-bold text-xl gradientText">Features</span>;
+  } else if (pathname === '/pricing') {
+    return <span className="font-bold text-xl gradientText">Pricing</span>;
+  } else {
+    return <span className="font-bold text-xl gradientText">Bookitu</span>;
+  }
 };
