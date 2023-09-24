@@ -1,17 +1,32 @@
 'use client';
 
+import { BlogData } from '@/lib/BlogData';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
 const Blog = () => {
   const [email, setEmail] = useState('');
+  const [activeCategory, setActiveCategory] = useState('View all');
 
-  const formHandler = (e: React.FormEvent<HTMLFormElement>) => {
+  let blogCategories: string[] = ['View all'];
+  for (const blog of BlogData) {
+    if (!blogCategories.includes(blog.category)) {
+      blogCategories.push(blog.category);
+    }
+  }
+
+  const subscribeFormHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert(
       `${email ? `You have subscribed with ${email}` : 'Input correct email'}`
     );
     setEmail('');
+  };
+
+  const blogSearchFormHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert('We are working on this feature');
   };
 
   return (
@@ -31,7 +46,7 @@ const Blog = () => {
           {/* form */}
           <form
             className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 mt-8"
-            onSubmit={formHandler}
+            onSubmit={subscribeFormHandler}
           >
             <div>
               <input
@@ -66,6 +81,96 @@ const Blog = () => {
               Get Started
             </button>
           </form>
+        </div>
+      </div>
+      {/* main blog contents */}
+      <div className="main-container py-16 lg:py-24 grid grid-cols-12">
+        {/* menu */}
+        <div className="col-span-12 md:col-span-3">
+          <form onSubmit={blogSearchFormHandler} className="hidden md:block">
+            <label
+              htmlFor="default-search"
+              className="mb-2 text-sm font-medium text-cyan sr-only"
+            >
+              Search
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 items-center pl-5 pointer-events-none hidden lg:flex">
+                <svg
+                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                className="block w-full p-4 pl-10 text-center border border-gray-200 text-cyan text-sm rounded-lg focus:outline-none  md:p-3 font-semibold md:font-normal"
+                placeholder="Search Blogs ..."
+                required
+              />
+            </div>
+          </form>
+          <p className="text-sm leading-5 lg:leading-6 font-medium mt-4 mb-3 font-inter text-primary">
+            Blog Categories
+          </p>
+          <div className="blogcategorymenu grid grid-cols-12 mb-10 md:mb-0">
+            {blogCategories.map((categoryName) => {
+              return (
+                <div
+                  className="col-span-12 my-3"
+                  key={Math.ceil(Math.random() * 999)}
+                >
+                  <p
+                    className={`${
+                      activeCategory === categoryName
+                        ? 'text-primary bg-gray-100 py-3'
+                        : 'text-cyan'
+                    }  font-inter font-semibold cursor-pointer px-2`}
+                    onClick={() => setActiveCategory(categoryName)}
+                  >
+                    {categoryName}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        {/* blog cards */}
+        <div className="col-span-12 md:col-span-9">
+          <div className="grid grid-cols-12 md:ml-10 lg:ml-20 gap-4 md:gap-x-6 gap-y-14 md:gap-y-16">
+            {BlogData.map((blog) => {
+              return (
+                <div className="col-span-12 md:col-span-6" key={blog.id}>
+                  <Image src={blog.image} alt={blog.title} />
+                  <h4 className="text-cyan font-inter lg:text-[1.5rem] font-semibold lg:leading-[32px] mt-5 md:mt-8">
+                    {blog.title}
+                  </h4>
+                  <p className="text-cyan font-inter lg:leading-[24px] mt-3 md:mt-4">
+                    {blog.content}
+                  </p>
+                  <p className="mt-4">
+                    <Link href="/blog" className="text-primary font-semibold">
+                      Read Post{' '}
+                      <span className="transform -rotate-45 origin-center inline-block">
+                        →
+                      </span>
+                    </Link>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
