@@ -1,7 +1,12 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import { Metadata } from 'next';
 import AppContextProvider from '../context/GlobalContext';
 import '../styles/globals.css';
+
+export const metadata: Metadata = {
+  title: 'Bookitu',
+};
 
 export default function RootLayout({
   children,
