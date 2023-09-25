@@ -13,7 +13,11 @@ const FeatureAndCurious = () => {
     >
       <div className="features grid grid-cols-12 justify-center">
         {/* feature text */}
-        <div className="col-span-12 lg:col-span-6 md:px-16 lg:pl-24">
+        <div
+          className="col-span-12 lg:col-span-6 md:px-16 lg:pl-24"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <h3 className="text-[#67748E] font-inter font-medium capitalize text-3xl lg:text-4xl mb-4 text-center md:text-left">
             Features
           </h3>
@@ -26,7 +30,11 @@ const FeatureAndCurious = () => {
           </button>
         </div>
         {/* feature image */}
-        <div className="col-span-12 lg:col-span-6">
+        <div
+          className="col-span-12 lg:col-span-6"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Image
             src={Bluishimg}
             alt="bluish feature image"
@@ -38,7 +46,11 @@ const FeatureAndCurious = () => {
       </div>
       <div className="curious grid grid-cols-12 justify-center lg:gap-x-20 lg:mt-52">
         {/* curious image */}
-        <div className="col-span-12 lg:col-span-6">
+        <div
+          className="col-span-12 lg:col-span-6"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Image
             src={Reddishimg}
             alt="reddish feature image"
@@ -48,7 +60,11 @@ const FeatureAndCurious = () => {
           />
         </div>
         {/* curious text */}
-        <div className="col-span-12 lg:col-span-6 lg:ml-14 order-first lg:order-none md:px-16 lg:px-0 md:mt-16 lg:mt-0">
+        <div
+          className="col-span-12 lg:col-span-6 lg:ml-14 order-first lg:order-none md:px-16 lg:px-0 md:mt-16 lg:mt-0"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <h3 className="text-[#67748E] font-inter font-medium capitalize text-3xl lg:text-4xl mb-4 lg:mb-6 mt-12 md:mt-0 text-center md:text-left">
             Curious how it works?
           </h3>

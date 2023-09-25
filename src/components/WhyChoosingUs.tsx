@@ -6,15 +6,27 @@ import msgicon from '../../public/assets/images/msgicon.png';
 const WhyChoosingUs = () => {
   return (
     <section className="mt-28 lg:mt-36 main-container lg:px-24">
-      <h2 className="text-[#67748E] text-center font-inter text-3xl font-semibold capitalize letterGap md:hidden">
+      <h2
+        className="text-[#67748E] text-center font-inter text-3xl font-semibold capitalize letterGap md:hidden"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         Why choose us?
       </h2>
-      <h2 className="text-[#67748E] text-center font-roboto md:text-2xl lg:text-4xl font-medium capitalize letterGap hidden md:block">
+      <h2
+        className="text-[#67748E] text-center font-roboto md:text-2xl lg:text-4xl font-medium capitalize letterGap hidden md:block"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         Why Choosing <span>Bookitu</span> Over Other Booking Systems?
       </h2>
       <div className="mt-12 lg:mt-20  grid grid-cols-12 gap-y-5 lg:gap-x-8">
         {/* programmatic approach */}
-        <div className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center">
+        <div
+          className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Image
             src={msgicon}
             alt="msgicon"
@@ -29,7 +41,11 @@ const WhyChoosingUs = () => {
           </p>
         </div>
         {/* programmatic approach */}
-        <div className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center">
+        <div
+          className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Image
             src={fairpricingicon}
             alt="msgicon"
@@ -44,7 +60,11 @@ const WhyChoosingUs = () => {
           </p>
         </div>
         {/* Easy and Fun */}
-        <div className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center">
+        <div
+          className="col-span-12 md:col-span-4 flex flex-col md:justify-center md:items-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Image
             src={easypricingicon}
             alt="msgicon"

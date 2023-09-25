@@ -11,7 +11,11 @@ const FeaturePricing = () => {
       <div className="main-container">
         <div className="mt-16 lg:pt-24 lg:mt-24">
           <div className="hidden lg:block lg:pb-16">
-            <div className="flex justify-start">
+            <div
+              className="flex justify-start"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               <div>
                 <p className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary">
                   Pricing
@@ -27,7 +31,11 @@ const FeaturePricing = () => {
             </div>
           </div>
         </div>
-        <div className="mb-16 lg:pb-24 lg:mb-24">
+        <div
+          className="mb-16 lg:pb-24 lg:mb-24"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div className="flex flex-col lg:flex-row lg:gap-24 justify-between">
             <div className="flex items-center">
               <div className="hidden lg:block">

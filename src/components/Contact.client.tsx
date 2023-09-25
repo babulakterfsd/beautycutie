@@ -14,13 +14,25 @@ const Contact = () => {
           <div className="py-16 lg:py-24">
             <div className="flex justify-center">
               <div>
-                <p className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary text-center">
+                <p
+                  className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary text-center"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
                   Contact Us
                 </p>
-                <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan mt-3">
+                <h1
+                  className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-center text-cyan mt-3"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
                   We’d love to hear from you
                 </h1>
-                <p className="text-sm leading-7 lg:text-xl lg:leading-7 font-inter font-normal text-center text-cyan mt-3">
+                <p
+                  className="text-sm leading-7 lg:text-xl lg:leading-7 font-inter font-normal text-center text-cyan mt-3"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
                   Our friendly team is always here to chat.
                 </p>
               </div>
@@ -32,7 +44,7 @@ const Contact = () => {
         <div className="main-container">
           <div className="px-4 pb-16 lg:px-20 lg:pb-24">
             <div className="flex flex-col text-center gap-10 lg:flex-row justify-between">
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={Email}
                   alt="phone"
@@ -53,7 +65,7 @@ const Contact = () => {
                   Ahmad@gmail.com
                 </Link>
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={Phone}
                   alt="phone"
@@ -68,7 +80,7 @@ const Contact = () => {
                   Send message to say hello.
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={Phone}
                   alt="phone"
@@ -103,7 +115,9 @@ const Contact = () => {
                   alt="contact us"
                   width={400}
                   height={400}
-                  className="object-contain text-center mx-auto "
+                  className="object-contain text-center mx-auto"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
                 />
               </div>
             </div>

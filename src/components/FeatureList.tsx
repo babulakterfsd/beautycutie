@@ -10,7 +10,7 @@ const FeatureList = () => {
   return (
     <div className="mt-12 md:mt-12 lg:mt-16">
       <div className="flex flex-col text-center gap-10 lg:flex-row justify-between">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature1}
             alt="phone"
@@ -26,7 +26,7 @@ const FeatureList = () => {
             Say goodbye to no-shows, even with reminder emails
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature2}
             alt="phone"
@@ -41,7 +41,7 @@ const FeatureList = () => {
             Create and Sell packages and track booked sessions effortlessly
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature3}
             alt="phone"
@@ -58,7 +58,7 @@ const FeatureList = () => {
         </div>
       </div>
       <div className="flex flex-col text-center gap-10 mt-12 lg:flex-row lg:mt-16 justify-between">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature4}
             alt="phone"
@@ -73,7 +73,7 @@ const FeatureList = () => {
             Automatically fill up your off-peak hours
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature5}
             alt="phone"
@@ -88,7 +88,7 @@ const FeatureList = () => {
             Offer last minute discounts
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature6}
             alt="phone"

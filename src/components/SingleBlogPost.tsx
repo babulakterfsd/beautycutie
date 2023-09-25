@@ -13,17 +13,33 @@ import NewsletterFull from './NewsletterFull';
 const SingleBlogPost = () => {
   return (
     <section className="mt-20">
-      <h2 className="mt-32 lg:mt-44 text-center text-primary font-inter font-semibold text-sm md:text-[1rem]">
+      <h2
+        className="mt-32 lg:mt-44 text-center text-primary font-inter font-semibold text-sm md:text-[1rem]"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         Article
       </h2>
-      <h3 className="text-cyan text-center font-inter text-4xl lg:text-5xl font-bold md:font-semibold lg:leading-[60px] lg:tracking-[-.96px] mt-3 mb-6">
+      <h3
+        className="text-cyan text-center font-inter text-4xl lg:text-5xl font-bold md:font-semibold lg:leading-[60px] lg:tracking-[-.96px] mt-3 mb-6"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         We care about your skin
       </h3>
-      <p className="text-cyan text-center text-lg font-medium mb-6">
+      <p
+        className="text-cyan text-center text-lg font-medium mb-6"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         May 31, 2024
       </p>
       {/* share section */}
-      <div className="flex justify-center items-center">
+      <div
+        className="flex justify-center items-center"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <h4 className="text-cyan font-medium mr-3">Share Blog On</h4>
         <div className="flex flex-row justify-center gap-x-4 items-center">
           <Link href="https://facebook.com/babulakterfsd2" target="_blank">
@@ -56,14 +72,22 @@ const SingleBlogPost = () => {
         src={singleblogimg}
         alt="single blog image"
         className="mt-14 mb-24 hidden md:block"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       />
       <Image
         src={singleblogimgmob}
         alt="single blog image"
         className="mt-10 mb-16 md:hidden mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       />
       {/* content */}
-      <div className="main-container grid grid-cols-12">
+      <div
+        className="main-container grid grid-cols-12"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div className="col-span-12 md:col-span-8 lg:col-span-6 md:col-start-3 lg:col-start-4 mb-10 flex justify-center flex-col gap-y-6">
           <h3 className="text-cyan text-3xl lg:text-4xl font-medium">
             Lorem ipsum dolor sit amet
@@ -128,7 +152,11 @@ const SingleBlogPost = () => {
         </div>
       </div>
       {/* author */}
-      <div className="main-container grid grid-cols-12">
+      <div
+        className="main-container grid grid-cols-12"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div className="col-span-12 md:col-span-10 md:col-start-2 rounded-lg px-4 py-6 md:py-8 md:px-10 lg:px-16 gradientBgReverse flex flex-col md:flex-row gap-x-5 md:mt-3 lg:mt-6 mb-10">
           <Image src={author} alt="author" className="self-start" />
           <div className="flex flex-col">

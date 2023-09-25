@@ -1,5 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import ClientLayout from '@/components/layout.client';
+import 'aos/dist/aos.css';
 import { Metadata } from 'next';
 import AppContextProvider from '../context/GlobalContext';
 import '../styles/globals.css';
@@ -19,7 +21,9 @@ export default function RootLayout({
       <body>
         <AppContextProvider>
           <Navbar />
-          <div className="mt-16 lg:mt-20 min-h-screen">{children}</div>
+          <ClientLayout>
+            <div className="mt-16 lg:mt-20 min-h-screen">{children}</div>
+          </ClientLayout>
           <Footer />
         </AppContextProvider>
       </body>

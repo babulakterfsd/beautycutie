@@ -10,23 +10,41 @@ const Pricing = () => {
     <>
       <section>
         <div className="mt-32 md:mt-32 lg:mt-44">
-          <h4 className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]">
+          <h4
+            className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Pricing
           </h4>
           <div className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5">
-            <h5 className="hidden lg:block text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative">
+            <h5
+              className="hidden lg:block text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               Your time matters to us
             </h5>
-            <h5 className="block lg:hidden text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative">
+            <h5
+              className="block lg:hidden text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               Plans that fit your scale
             </h5>
             <Image
               src={ultasurjo}
               alt="Ultasurjo"
               className="absolute hidden lg:block h-20 w-20 top-24 lg:top-36 lg:right-[27rem] -right-[0.5rem] object-contain"
+              data-aos="fade-down"
+              data-aos-duration="1500"
             />
           </div>
-          <p className="font-inter lg:text-[1.2rem] text-lg leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto">
+          <p
+            className="font-inter lg:text-[1.2rem] text-lg leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Simple, transparent pricing that grows with you. Try any plan free
             for 45 days.
           </p>
@@ -45,8 +63,14 @@ const Pricing = () => {
               src={GetInTouch}
               alt="Get In Touch"
               className="object-contain"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div className="text-left lg:text-start mt-4 mb-6 md:mt-0 md:mb-0">
+            <div
+              className="text-left lg:text-start mt-4 mb-6 md:mt-0 md:mb-0"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h4 className="text-cyan mb-2 font-inter font-semibold text-2xl lg:text-4xl">
                 Need support?
               </h4>
@@ -63,7 +87,7 @@ const Pricing = () => {
         <div className="main-container">
           <div className="lg:pb-16">
             <div className="">
-              <div>
+              <div data-aos="fade-down" data-aos-duration="1500">
                 <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-[60px] font-semibold font-inter text-cyan">
                   FAQS
                 </h1>
@@ -78,7 +102,11 @@ const Pricing = () => {
             </div>
             <PriceList />
             {/* still help */}
-            <div className="flex flex-col lg:flex-row p-8 bg-gray-50 rounded-2xl justify-start lg:justify-between lg:items-center mt-8">
+            <div
+              className="flex flex-col lg:flex-row p-8 bg-gray-50 rounded-2xl justify-start lg:justify-between lg:items-center mt-8"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div className="flex-col justify-start items-start gap-2 inline-flex">
                 <div className="self-stretch text-cyan text-lg md:text-xl font-bold md:font-semibold font-inter leading-[30px]">
                   Still have questions?

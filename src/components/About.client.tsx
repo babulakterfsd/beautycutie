@@ -11,10 +11,18 @@ const About = () => {
     <section>
       {/* story section */}
       <div className="mt-32 md:mt-32 lg:mt-44">
-        <h4 className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]">
+        <h4
+          className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           Our values
         </h4>
-        <div className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5">
+        <div
+          className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <Image
             src={ultasurjo}
             alt="Ultasurjo"
@@ -24,7 +32,11 @@ const About = () => {
             Our story
           </h5>
         </div>
-        <p className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto">
+        <p
+          className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           "Picture this: once upon a time, there was a salon owner, let's call
           her Mrs. X, who's excellent at doing perfect brows and lashes but
           struggled with handling bookings. No shows, unanswered emails,
@@ -42,18 +54,32 @@ const About = () => {
       </div>
       {/* vision section */}
       <div className="mt-32 md:mt-32 lg:mt-44">
-        <h4 className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]">
+        <h4
+          className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           About us
         </h4>
-        <h5 className="text-cyan text-center text-4xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] mb-4">
+        <h5
+          className="text-cyan text-center text-4xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] mb-4"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           Our vision
         </h5>
         <Image
           src={visionimg}
           alt="Vision"
           className="object-contain w-full hidden lg:block px-32 my-10"
+          data-aos="fade-down"
+          data-aos-duration="2500"
         />
-        <p className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto">
+        <p
+          className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           Running a service oriented business that works on appointments is hell
           of a work. The business model simply doesn’t leave much room to hire
           front desk staff till you grow substantially in number of staff.
@@ -70,7 +96,11 @@ const About = () => {
         </p>
       </div>
       {/* newsletter section */}
-      <div className="px-6 md:px-16 lg:px-32 py-12">
+      <div
+        className="px-6 md:px-16 lg:px-32 py-12"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <NewsletterHalf />
       </div>
       {/* contact section */}

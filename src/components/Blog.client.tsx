@@ -36,19 +36,33 @@ const Blog = () => {
       <div className="bg-gray-200">
         {/* blogs header */}
         <div className="main-container bg-gray-200 py-16 lg:py-24">
-          <p className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary">
+          <p
+            className="text-sm leading-5 lg:text-base lg:leading-6 font-semibold font-inter text-primary"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Resources
           </p>
-          <h3 className="font-inter text-cyan text-4xl lg:text-5xl lg:font-semibold lg:leading-[60px] lg:tracking-[-.96px] mt-3">
+          <h3
+            className="font-inter text-cyan text-4xl lg:text-5xl lg:font-semibold lg:leading-[60px] lg:tracking-[-.96px] mt-3"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Untitled blog
           </h3>
-          <p className="my-4 text-cyan font-inter lg:text-[1.2rem] lg:leading-[30px]">
+          <p
+            className="my-4 text-cyan font-inter lg:text-[1.2rem] lg:leading-[30px]"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Tool and strategies modern teams need to help their companies grow.
           </p>
           {/* form */}
           <form
             className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 mt-8"
             onSubmit={subscribeFormHandler}
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <div>
               <input
@@ -88,7 +102,11 @@ const Blog = () => {
       {/* main blog contents */}
       <div className="main-container py-16 lg:py-24 grid grid-cols-12">
         {/* menu */}
-        <div className="col-span-12 md:col-span-3">
+        <div
+          className="col-span-12 md:col-span-3"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <form onSubmit={blogSearchFormHandler} className="hidden md:block">
             <label
               htmlFor="default-search"
@@ -153,7 +171,12 @@ const Blog = () => {
           <div className="grid grid-cols-12 md:ml-10 lg:ml-20 gap-4 md:gap-x-6 gap-y-14 md:gap-y-16">
             {BlogData.map((blog) => {
               return (
-                <div className="col-span-12 md:col-span-6" key={blog.id}>
+                <div
+                  className="col-span-12 md:col-span-6"
+                  key={blog.id}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <Image src={blog.image} alt={blog.title} />
                   <h4 className="text-cyan font-inter lg:text-[1.5rem] font-bold md:font-semibold lg:leading-[32px] mt-5 md:mt-8">
                     {blog.title}

@@ -56,7 +56,11 @@ function PriceCard() {
       <div className="">
         <div className="p-4">
           <div className="flex justify-center my-4">
-            <div className="bg-gray-50 rounded-lg border border-gray-100 justify-start items-center gap-2 p-1 inline-flex">
+            <div
+              className="bg-gray-50 rounded-lg border border-gray-100 justify-start items-center gap-2 p-1 inline-flex"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <button
                 onClick={togglePricing}
                 className={`${
@@ -81,6 +85,8 @@ function PriceCard() {
             <div
               className="card relative h-auto w-auto bg-gray-50 rounded-lg"
               key={index}
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <div
                 id="card_one_front"

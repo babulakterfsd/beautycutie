@@ -14,10 +14,18 @@ const Feature = () => {
     <>
       <section>
         <div className="mt-32 md:mt-32 lg:mt-44">
-          <h4 className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]">
+          <h4
+            className="text-center text-primary font-inter font-semibold text-sm md:text-[1rem]"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             Our values
           </h4>
-          <div className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5">
+          <div
+            className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             <Image
               src={ultasurjo}
               alt="Ultasurjo"
@@ -27,7 +35,11 @@ const Feature = () => {
               Why Us?
             </h5>
           </div>
-          <p className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto">
+          <p
+            className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             Customers expect you to be perfect when it comes to their treatment,
             Why shouldn’t you expect a perfect application that does exactly
             what you need? Every functionality is built because it adds value
@@ -44,7 +56,11 @@ const Feature = () => {
       {/* feature price */}
       <FeaturePricing />
 
-      <div className="px-6 md:px-16 lg:px-32 mb-16 lg:mb-24">
+      <div
+        className="px-6 md:px-16 lg:px-32 mb-16 lg:mb-24"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <NewsletterHalf />
       </div>
       <section className="mb-16 lg:mb-24">

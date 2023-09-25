@@ -10,7 +10,7 @@ const PriceList = () => {
   return (
     <div className="mt-16 md:mt-16 lg:mt-16">
       <div className="flex flex-col text-start gap-10 lg:flex-row justify-between">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature1}
             alt="phone"
@@ -26,7 +26,7 @@ const PriceList = () => {
             work with you to get you up and running as soon as possible.
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature2}
             alt="phone"
@@ -42,7 +42,7 @@ const PriceList = () => {
             friendly team to find a solution that works for you.
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature3}
             alt="phone"
@@ -60,7 +60,7 @@ const PriceList = () => {
         </div>
       </div>
       <div className="flex flex-col gap-10 mt-12 lg:flex-row lg:mt-16 justify-between">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature4}
             alt="phone"
@@ -76,7 +76,7 @@ const PriceList = () => {
             invoices is to add the information to the workspace's name.
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature5}
             alt="phone"
@@ -92,7 +92,7 @@ const PriceList = () => {
             workspace, and still have any number of free workspaces.
           </p>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <Image
             src={Feature6}
             alt="phone"

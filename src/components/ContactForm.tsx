@@ -1,6 +1,10 @@
 const ContactForm = () => {
   return (
-    <div className="flex justify-center">
+    <div
+      className="flex justify-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div className="w-full lg:w-[600px]">
         <div className="mb-16 lg:mb-24">
           <p className="text-base leading-6 font-semibold font-inter text-primary text-center">
