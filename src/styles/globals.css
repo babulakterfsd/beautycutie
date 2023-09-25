@@ -120,3 +120,61 @@ body {
     left: 120px !important;
   }
 }
+
+
+/* scroll to top */
+
+@font-face {
+  font-family: 'font-awesome';
+  src: url('../../public/assets/fonts/fa/fa-solid-900.ttf') format('truetype'),
+    url('../../public/assets/fonts/fa/fa-solid-900.woff2') format('woff2');
+}
+
+
+.scrollToTop {
+  position: relative;
+}
+.scrollToTop::after {
+  font-family: 'font-awesome';
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  color: rgba(255, 170, 165, 1);
+  display: block;
+  content: '\f062';
+  font-size: 24px;
+  z-index: 999;
+  cursor: pointer;
+  animation: toTop 2s linear 2s infinite backwards;
+}
+
+.scrollToDown {
+  position: fixed;
+}
+.scrollToDown::after {
+  font-family: 'font-awesome';
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  color: rgba(255, 170, 165, 1);
+  display: block;
+  content: '\f107';
+  font-size: 24px;
+  z-index: 999;
+  animation: toTop 2s linear 2s infinite backwards;
+}
+
+@keyframes toTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
