@@ -71,7 +71,7 @@ const SingleBlogPost = () => {
       <Image
         src={singleblogimg}
         alt="single blog image"
-        className="mt-14 mb-24 hidden sm:block"
+        className="mt-14 mb-24 hidden sm:block w-full object-cover"
         data-aos="fade-up"
         data-aos-duration="1500"
       />
