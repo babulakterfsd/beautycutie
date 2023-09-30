@@ -266,7 +266,7 @@ const FeaturePricing = () => {
                       className="w-full bg-primary text-white font-normal font-inter py-3 px-5 rounded focus:outline-none focus:shadow-outline"
                       type="button"
                     >
-                      Get Started
+                      Get started
                     </button>
                   </div>
                 </div>

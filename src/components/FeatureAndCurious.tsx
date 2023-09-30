@@ -26,7 +26,7 @@ const FeatureAndCurious = () => {
           </p>
           <FAccordion />
           <button className="bg-primary text-center rounded-lg px-8 py-[14px] text-white font-inter lg:tracking-[-0.205px] mt-6 lg:mt-8 ml-4 md:ml-0">
-            See Full List
+            See full list
           </button>
         </div>
         {/* feature image */}
@@ -76,7 +76,7 @@ const FeatureAndCurious = () => {
             credit cards needed. No commitment.Free for 45 days
           </p>
           <button className="bg-primary text-center rounded-lg px-8 py-[14px] text-white font-inter lg:tracking-[-0.205px] mt-6 lg:mt-4 ml-4 md:ml-0">
-            Get Started
+            Get started
           </button>
         </div>
       </div>

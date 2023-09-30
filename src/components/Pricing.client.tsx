@@ -76,7 +76,7 @@ const Pricing = () => {
               </h4>
               <p className="text-cyan">We are here to help you</p>
               <button className="bg-primary text-white font-inter font-normal py-3 px-5 rounded focus:outline-none focus:shadow-outline mt-2">
-                Get In Touch
+                Get in touch
               </button>
             </div>
           </div>

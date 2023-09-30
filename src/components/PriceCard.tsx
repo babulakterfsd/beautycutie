@@ -124,7 +124,7 @@ function PriceCard() {
                   className="w-full bg-primary text-white font-normal font-inter py-3 px-5 rounded focus:outline-none focus:shadow-outline"
                   type="button"
                 >
-                  Get Started
+                  Get started
                 </button>
               </div>
               <div className="text-center absolute -top-4 left-0 right-0">

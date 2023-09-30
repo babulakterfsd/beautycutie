@@ -88,13 +88,13 @@ const Blog = () => {
               type="submit"
               className="bg-primary md:h-[42px] lg:h-[42px] hidden md:flex items-center text-center rounded-lg md:px-3 lg:px-4 md:py-5 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold md:ml-4 lg:ml-0"
             >
-              Get Started
+              Get started
             </button>
             <button
               type="submit"
               className="bg-[#FFAAA5] text-[1rem] md:hidden items-center text-center rounded-lg p-3 text-white font-inter font-medium"
             >
-              Get Started
+              Get started
             </button>
           </form>
         </div>
