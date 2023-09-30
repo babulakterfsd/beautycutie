@@ -145,7 +145,7 @@ function PriceCard() {
       <Image
         src={Ajaira}
         alt="Ajaira"
-        className="absolute hidden lg:block h-20 w-32 top-[54.25rem] right-[4.25rem] object-contain"
+        className="absolute hidden lg:block  top-[54.25rem] right-0 object-contain"
       />
     </>
   );
