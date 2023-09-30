@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import reviewimg from '../../public/assets/images/reviewimg.png';
 import Slider from './Slider';
+
+const reviewimg = '/assets/images/reviewimg.png';
 
 const Reviews = () => {
   return (
@@ -31,6 +32,8 @@ const Reviews = () => {
             src={reviewimg}
             alt="review image"
             className="h-[400px] w-[90vh] md:h-[500px] md:w-[500px] object-contain mx-auto"
+            width={500}
+            height={500}
           />
         </div>
       </div>

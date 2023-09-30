@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import getintouchimg from '../../public/assets/images/getintouch.png';
-import getintouch2img from '../../public/assets/images/getintouch2smallicon.png';
-import visionimg from '../../public/assets/images/ourvisiondesktop.png';
-import ultasurjo from '../../public/assets/images/ultashurjo.png';
-import ContactForm from './ContactForm';
-import NewsletterHalf from './NewsletterHalf';
+import ContactForm from '../contact/ContactForm';
+import NewsletterHalf from '../shared/NewsletterHalf';
+
+const getintouchimg = '/assets/images/getintouch.png';
+const getintouch2img = '/assets/images/getintouch2smallicon.png';
+const visionimg = '/assets/images/ourvisiondesktop.png';
+const ultasurjo = '/assets/images/ultashurjo.png';
 
 const About = () => {
   return (
@@ -27,6 +28,8 @@ const About = () => {
             src={ultasurjo}
             alt="Ultasurjo"
             className="object-contain h-20 w-20 -mt-16 -ml-16"
+            width={80}
+            height={80}
           />
           <h5 className="text-cyan text-center text-4xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3">
             Our story
@@ -74,6 +77,8 @@ const About = () => {
           className="object-contain w-full hidden lg:block px-32 my-10"
           data-aos="fade-down"
           data-aos-duration="2500"
+          width={1600}
+          height={400}
         />
         <p
           className="font-inter text-[1.2rem] leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
@@ -110,11 +115,15 @@ const About = () => {
             src={getintouchimg}
             alt="Get in touch"
             className="object-cover lg:w-[431px]"
+            width={431}
+            height={431}
           />
           <Image
             src={getintouch2img}
             alt="Get in touch"
             className="md:hidden absolute -bottom-20 left-52"
+            width={80}
+            height={80}
           />
         </div>
         <div className="col-span-12 md:col-span-6 mt-6 lg:mb-16">
@@ -125,6 +134,8 @@ const About = () => {
             src={getintouch2img}
             alt="Get in touch"
             className="hidden md:block md:-ml-36 lg:ml-0 lg:mt-60"
+            width={80}
+            height={80}
           />
         </div>
       </div>

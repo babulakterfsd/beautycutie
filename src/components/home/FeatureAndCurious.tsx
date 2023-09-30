@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import Bluishimg from '../../public/assets/images/bluishfeaturehomeimg.png';
-import Reddishimg from '../../public/assets/images/reddishfeaturehomeimg.png';
-import Styles from '../styles/home.module.css';
-import FAccordion from './FeatureAccordion';
+import Styles from '../../styles/home.module.css';
+import FAccordion from '../features/FeatureAccordion';
+
+const Bluishimg = '/assets/images/bluishfeaturehomeimg.png';
+const Reddishimg = '/assets/images/reddishfeaturehomeimg.png';
 
 const FeatureAndCurious = () => {
   return (

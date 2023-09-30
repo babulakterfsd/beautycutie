@@ -1,4 +1,4 @@
-import Pricing from '@/components/Pricing.client';
+import Pricing from '@/components/pricing/Pricing';
 
 const PricingPage = () => {
   return <Pricing />;

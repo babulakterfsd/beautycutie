@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import reviewerimg from '../../public/assets/images/reviewavatar.png';
-import staricon from '../../public/assets/images/staricon.png';
+
+const reviewerimg = '/assets/images/reviewavatar.png';
+const staricon = '/assets/images/staricon.png';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -32,11 +33,36 @@ const Slider = () => {
             >
               <div className="flex flex-col">
                 <div className="flex gap-x-0.5 mb-4 lg:mb-10">
-                  <Image src={staricon} alt="star icon" />
-                  <Image src={staricon} alt="star icon" />
-                  <Image src={staricon} alt="star icon" />
-                  <Image src={staricon} alt="star icon" />
-                  <Image src={staricon} alt="star icon" />
+                  <Image
+                    src={staricon}
+                    alt="star icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    src={staricon}
+                    alt="star icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    src={staricon}
+                    alt="star icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    src={staricon}
+                    alt="star icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    src={staricon}
+                    alt="star icon"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <h2 className="text-cyan text-shadow font-inter text-3xl lg:text-4xl lg:font-medium lg:leading-[52px] lg:tracking-[-.96px] w-[90vw] md:w-auto mb-6">
                   We've really sped up our workflow using <span>Bookitu</span>{' '}
@@ -45,7 +71,12 @@ const Slider = () => {
                 <div className="flex justify-between items-center lg:mt-12">
                   {/* reviewer */}
                   <div className="flex gap-x-3">
-                    <Image src={reviewerimg} alt="reviewer image" />
+                    <Image
+                      src={reviewerimg}
+                      alt="reviewer image"
+                      width={56}
+                      height={56}
+                    />
                     <div>
                       <h4 className="text-cyan font-inter lg:text-[1.1rem] lg:font-semibold lg:leading-[28px]">
                         Katherine Moss

@@ -8,13 +8,13 @@ import {
   faProjectDiagram,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
-// import babul_akter from '../../public/assets/images/babul_akter_mobile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Logo from '../../public/assets/images/logo.png';
-import useAppContext from '.././hooks/useAppContext';
+import useAppContext from '../../hooks/useAppContext';
+
+const Logo = '/assets/images/logo.png';
 
 const MobileNavbar = () => {
   const { isMenuOpen } = useAppContext();

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../public/assets/images/logo.png';
+const logo = '/assets/images/logo.png';
 
 export default function Footer() {
   return (
@@ -100,7 +100,13 @@ export default function Footer() {
         {/* footer bottom */}
         <div className=" col-span-12 flex flex-col md:items-center md:justify-center md:gap-4 border-t-2 border-gray-100 bg-[#67748E]">
           <div className="flex flex-col md:items-center md:justify-around gap-y-1 mt-2.5 lg:flex-row lg:gap-x-44">
-            <Image src={logo} alt="logo" className="h-8 w-8 md:hidden" />
+            <Image
+              src={logo}
+              alt="logo"
+              className="h-8 w-8 md:hidden"
+              width={32}
+              height={32}
+            />
             <p className=" md:text-center lg:order-first lg:mt-2 lg:pb-3 lg:font-[400] text-secondary">
               © {new Date().getFullYear()} Bookitu. All rights reserved.
             </p>

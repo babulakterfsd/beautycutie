@@ -2,12 +2,14 @@ import Image from 'next/image';
 
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Dashboard from '../../public/assets/images/freature_last.png';
-import MobileDasboard from '../../public/assets/images/mobile_feature.png';
-import ultasurjo from '../../public/assets/images/ultashurjo.png';
+
+import NewsletterHalf from '../shared/NewsletterHalf';
 import FeatureList from './FeatureList';
 import FeaturePricing from './FeaturePricing';
-import NewsletterHalf from './NewsletterHalf';
+
+const Dashboard = '/assets/images/freature_last.png';
+const MobileDasboard = '/assets/images/mobile_feature.png';
+const ultasurjo = '/assets/images/ultashurjo.png';
 
 const Feature = () => {
   return (
@@ -30,6 +32,8 @@ const Feature = () => {
               src={ultasurjo}
               alt="Ultasurjo"
               className="object-contain h-20 w-20 -mt-16 -ml-16"
+              width={80}
+              height={80}
             />
             <h5 className="text-cyan text-center text-4xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3">
               Why Us?

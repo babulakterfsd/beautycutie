@@ -1,9 +1,10 @@
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import Feature1 from '../../public/assets/images/feature1.png';
-import Feature2 from '../../public/assets/images/feature2.png';
-import Feature3 from '../../public/assets/images/feature3.png';
+
+const Feature1 = '/assets/images/feature1.png';
+const Feature2 = '/assets/images/feature2.png';
+const Feature3 = '/assets/images/feature3.png';
 
 const FeaturePricing = () => {
   return (

@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import lotsoficons from '../../public/assets/images/lotsoficonsglobal.png';
 
-const NewsletterHalf = () => {
+const lotsoficons = '/assets/images/lotsoficonsglobal.png';
+
+const NewsletterFull = () => {
   const [email, setEmail] = useState('');
 
   const formHandler = (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,12 +17,12 @@ const NewsletterHalf = () => {
 
   return (
     <section
-      className={`mb-16 md:mb-0 lg:mt-16 lg:w-full gradientBg rounded-3xl md:rounded-xl`}
+      className={`mb-16 md:mb-0 lg:mt-44 lg:w-full gradientBg rounded-3xl md:rounded-none`}
     >
       <div className="grid grid-cols-12">
-        <div className="col-span-12 md:col-span-4 lg:col-span-2 hidden lg:block"></div>
+        <div className="col-span-12 md:col-span-4 hidden lg:block"></div>
         {/* main content */}
-        <div className="col-span-12 lg:col-span-6 flex justify-center items-center flex-col px-7 md:px-0 py-10 md:py-8 lg:py-0 lg:ml-32">
+        <div className="col-span-12 lg:col-span-4 flex justify-center items-center flex-col px-7 md:px-0 py-10 md:py-8 lg:py-0">
           <h2 className="text-center text-cyan font-inter text-3xl font-semibold lg:leading-[44px] lg:tracking-[-.72px] mb-4 lg:mb-5">
             Join our newsletter
           </h2>
@@ -29,7 +30,7 @@ const NewsletterHalf = () => {
             Be the first to know when new jobs are posted!
           </p>
           <form
-            className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 md:self-center mt-3 md:mt-0"
+            className="flex flex-col gap-y-3 md:flex-row lg:gap-x-4 md:self-center lg:self-start mt-3 md:mt-0"
             onSubmit={formHandler}
           >
             <div>
@@ -44,7 +45,7 @@ const NewsletterHalf = () => {
               />
               <p
                 id="helper-text-explanation"
-                className="mt-2 text-sm text-[#475467] hidden"
+                className="mt-2 text-sm text-[#475467] hidden md:block"
               >
                 We care about your in our{' '}
                 <Link href="/" className="underline">
@@ -54,7 +55,7 @@ const NewsletterHalf = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary md:h-[42px] lg:h-[42px] hidden md:flex items-center text-center rounded-lg md:px-3 lg:px-4 md:py-5 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold md:ml-4 lg:ml-0"
+              className="bg-[#FFAAA5] md:h-[42px] lg:h-[42px] hidden md:flex items-center text-center rounded-lg md:px-3 lg:px-4 md:py-5 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold md:ml-4 lg:ml-0"
             >
               Subscribe
             </button>
@@ -67,11 +68,16 @@ const NewsletterHalf = () => {
           </form>
         </div>
         <div className="col-span-12 lg:col-span-4 hidden lg:flex justify-end lg:mr-2">
-          <Image src={lotsoficons} alt="lots of icons" />
+          <Image
+            src={lotsoficons}
+            alt="lots of icons"
+            width={314}
+            height={314}
+          />
         </div>
       </div>
     </section>
   );
 };
 
-export default NewsletterHalf;
+export default NewsletterFull;

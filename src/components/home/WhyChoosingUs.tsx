@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import easypricingicon from '../../public/assets/images/easypricingicon.png';
-import fairpricingicon from '../../public/assets/images/fairpricingicon.png';
-import msgicon from '../../public/assets/images/msgicon.png';
+
+const easypricingicon = '/assets/images/easypricingicon.png';
+const fairpricingicon = '/assets/images/fairpricingicon.png';
+const msgicon = '/assets/images/msgicon.png';
 
 const WhyChoosingUs = () => {
   return (
@@ -31,6 +32,8 @@ const WhyChoosingUs = () => {
             src={msgicon}
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
+            width={56}
+            height={56}
           />
           <h4 className="text-[#67748E] font-inter font-bold md:font-semibold lg:leading-[30px] mt-4 mb-2">
             Pragmatic approach
@@ -50,6 +53,8 @@ const WhyChoosingUs = () => {
             src={fairpricingicon}
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
+            width={56}
+            height={56}
           />
           <h4 className="text-[#67748E] font-inter font-bold md:font-semibold lg:leading-[30px] mt-4 mb-2">
             Fair Pricing
@@ -69,6 +74,8 @@ const WhyChoosingUs = () => {
             src={easypricingicon}
             alt="msgicon"
             className="h-10 w-10 md:h-12 md:w-12"
+            width={56}
+            height={56}
           />
           <h4 className="text-[#67748E] font-inter font-bold md:font-semibold lg:leading-[30px] mt-4 mb-2">
             Easy and Fun

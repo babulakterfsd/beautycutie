@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Styles from '../styles/navbar.module.css';
+import Styles from '../../styles/navbar.module.css';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {

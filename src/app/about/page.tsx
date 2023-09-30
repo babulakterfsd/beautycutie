@@ -1,4 +1,4 @@
-import About from '@/components/About.client';
+import About from '@/components/about/About';
 
 const AboutPage = () => {
   return <About />;

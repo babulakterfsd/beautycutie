@@ -2,11 +2,12 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
-import Phone from '../../public/assets/images/contactphone.png';
-import GetInTouch from '../../public/assets/images/getintouch.png';
-import Email from '../../public/assets/images/pricemailicon.png';
+import NewsletterFull from '../shared/NewsletterFull';
 import ContactForm from './ContactForm';
-import NewsletterFull from './NewsletterFull';
+
+const Phone = '/assets/images/contactphone.png';
+const GetInTouch = '/assets/images/getintouch.png';
+const Email = '/assets/images/pricemailicon.png';
 
 const Contact = () => {
   return (
@@ -71,7 +72,7 @@ const Contact = () => {
                 <FontAwesomeIcon
                   icon={faWhatsapp}
                   style={{ color: 'rgba(255, 170, 165, 1)' }}
-                  className=" object-contain text-center mx-auto mb-4 lg:mb-5 shadow-lg rounded-full bg-[#feeeeb] p-2 h-5 w-5"
+                  className=" object-contain text-center mx-auto mb-4 lg:mb-5 shadow-lg rounded-full bg-[#feeeeb] p-2 h-9 w-9"
                 />
                 <h5 className="text-xl leading-8 font-semibold text-cyan font-inter">
                   What’s app

@@ -1,4 +1,4 @@
-import Feature from '@/components/Feature.client';
+import Feature from '@/components/features/Feature';
 
 const FeaturePage = () => {
   return <Feature />;

@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import catmuche from '../../public/assets/images/catmuschehomebanner.png';
-import bannerdashboardimg from '../../public/assets/images/homedashboard.png';
-import Styles from '../styles/home.module.css';
+import Styles from '../../styles/home.module.css';
+
+const catmuche = '/assets/images/catmuschehomebanner.png';
+const bannerdashboardimg = '/assets/images/homedashboard.png';
 
 const Banner = () => {
   return (
@@ -57,6 +58,8 @@ const Banner = () => {
             src={bannerdashboardimg}
             alt="bannerdashboardimg"
             className="object-contain lg:mx-auto"
+            width={1216}
+            height={780}
           />
         </div>
       </div>

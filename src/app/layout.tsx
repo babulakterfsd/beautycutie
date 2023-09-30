@@ -1,6 +1,6 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import ClientLayout from '@/components/layout.client';
+import Footer from '@/components/shared/Footer';
+import Navbar from '@/components/shared/Navbar';
+import ClientLayout from '@/components/shared/layout';
 import 'aos/dist/aos.css';
 import { Metadata } from 'next';
 import AppContextProvider from '../context/GlobalContext';

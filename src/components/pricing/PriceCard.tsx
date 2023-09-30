@@ -3,10 +3,11 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useState } from 'react';
-import Ajaira from '../../public/assets/images/ajaira.png';
-import bomimg from '../../public/assets/images/bom.png';
-import socityimg from '../../public/assets/images/sociietypricingicon.png';
-import squadimg from '../../public/assets/images/squadpricingicon.png';
+
+const Ajaira = '/assets/images/ajaira.png';
+const bomimg = '/assets/images/bom.png';
+const socityimg = '/assets/images/sociietypricingicon.png';
+const squadimg = '/assets/images/squadpricingicon.png';
 
 const pricingData = [
   {
@@ -146,6 +147,8 @@ function PriceCard() {
         src={Ajaira}
         alt="Ajaira"
         className="absolute hidden lg:block  top-[54.25rem] right-0 object-contain"
+        width={250}
+        height={250}
       />
     </>
   );

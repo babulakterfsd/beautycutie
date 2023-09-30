@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import arrowupright from '../../public/assets/images/arrow-up-right.png';
-import author from '../../public/assets/images/author.png';
-import fb from '../../public/assets/images/fb.png';
-import insta from '../../public/assets/images/insta.png';
-import linkedin from '../../public/assets/images/linkedin.png';
-import singleblogimg from '../../public/assets/images/singleblogimg.png';
-import singleblogimgmob from '../../public/assets/images/singleblogimgmob.png';
-import twitter from '../../public/assets/images/twitter.png';
-import NewsletterFull from './NewsletterFull';
+import NewsletterFull from '../shared/NewsletterFull';
+
+const arrowupright = '/assets/images/arrow-up-right.png';
+const author = '/assets/images/author.png';
+const fb = '/assets/images/fb.png';
+const insta = '/assets/images/insta.png';
+const linkedin = '/assets/images/linkedin.png';
+const singleblogimg = '/assets/images/singleblogimg.png';
+const singleblogimgmob = '/assets/images/singleblogimgmob.png';
+const twitter = '/assets/images/twitter.png';
 
 const SingleBlogPost = () => {
   return (
@@ -43,13 +44,21 @@ const SingleBlogPost = () => {
         <h4 className="text-cyan font-medium mr-3">Share Blog On</h4>
         <div className="flex flex-row justify-center gap-x-4 items-center">
           <Link href="https://facebook.com/babulakterfsd2" target="_blank">
-            <Image src={fb} alt="facebook" className="cursor-pointer h-5 w-5" />
+            <Image
+              src={fb}
+              alt="facebook"
+              className="cursor-pointer h-5 w-5"
+              width={20}
+              height={20}
+            />
           </Link>
           <Link href="https://instagram.com/babulakterfsd2" target="_blank">
             <Image
               src={insta}
               alt="Instagram"
               className="cursor-pointer h-5 w-5"
+              width={20}
+              height={20}
             />
           </Link>
           <Link href="https://linkedin.com/in/babulakterfsd" target="_blank">
@@ -57,6 +66,8 @@ const SingleBlogPost = () => {
               src={linkedin}
               alt="linkedin"
               className="cursor-pointer h-5 w-5"
+              width={20}
+              height={20}
             />
           </Link>
           <Link href="https://twitter.com/babulakterfsd" target="_blank">
@@ -64,6 +75,8 @@ const SingleBlogPost = () => {
               src={twitter}
               alt="twitter"
               className="cursor-pointer h-5 w-5"
+              width={20}
+              height={20}
             />
           </Link>
         </div>
@@ -74,6 +87,8 @@ const SingleBlogPost = () => {
         className="mt-14 mb-24 hidden sm:block w-full object-cover"
         data-aos="fade-up"
         data-aos-duration="1500"
+        width={1440}
+        height={410}
       />
       <Image
         src={singleblogimgmob}
@@ -81,6 +96,8 @@ const SingleBlogPost = () => {
         className="mt-10 mb-16 sm:hidden mx-auto"
         data-aos="fade-up"
         data-aos-duration="1500"
+        width={343}
+        height={343}
       />
       {/* content */}
       <div
@@ -158,7 +175,13 @@ const SingleBlogPost = () => {
         data-aos-duration="1500"
       >
         <div className="col-span-12 md:col-span-10 md:col-start-2 rounded-lg px-4 py-6 md:py-8 md:px-10 lg:px-16 gradientBgReverse flex flex-col md:flex-row gap-x-5 md:mt-3 lg:mt-6 mb-10">
-          <Image src={author} alt="author" className="self-start" />
+          <Image
+            src={author}
+            alt="author"
+            className="self-start"
+            height={80}
+            width={80}
+          />
           <div className="flex flex-col">
             <h5 className="text-cyan text-2xl font-medium font-inter">
               Olivia Rhye
@@ -220,7 +243,12 @@ const SingleBlogPost = () => {
                     <h4 className="text-cyan font-inter font-medium md:font-semibold text-xl">
                       {`${rpost.title}`}
                     </h4>
-                    <Image src={arrowupright} alt="link" />
+                    <Image
+                      src={arrowupright}
+                      alt="link"
+                      width={16}
+                      height={6}
+                    />
                   </div>
                   <p className="text-cyan font-inter mb-4">{`${rpost.content}`}</p>
                   <div className="flex flex-row gap-x-5 mt-3">

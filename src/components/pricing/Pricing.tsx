@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import GetInTouch from '../../public/assets/images/getintouch.png';
-import MobileDasboard from '../../public/assets/images/mobile_feature.png';
-import ultasurjo from '../../public/assets/images/price_sun.png';
 import PriceCard from './PriceCard';
 import PriceList from './PriceList';
+
+const GetInTouch = '/assets/images/getintouch.png';
+const MobileDasboard = '/assets/images/mobile_feature.png';
+const ultasurjo = '/assets/images/price_sun.png';
 
 const Pricing = () => {
   return (
@@ -31,6 +32,8 @@ const Pricing = () => {
               className=" hidden lg:block h-20 w-20 object-contain -mt-16 -ml-4"
               data-aos="fade-down"
               data-aos-duration="1500"
+              width={80}
+              height={80}
             />
             <h5
               className="block lg:hidden text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3"
@@ -65,6 +68,8 @@ const Pricing = () => {
               className="object-contain"
               data-aos="fade-up"
               data-aos-duration="1500"
+              width={500}
+              height={500}
             />
             <div
               className="text-left lg:text-start mt-4 mb-6 md:mt-0 md:mb-0"

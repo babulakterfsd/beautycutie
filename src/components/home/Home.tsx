@@ -1,6 +1,6 @@
+import NewsletterFull from '../shared/NewsletterFull';
 import Banner from './Banner';
 import FeatureAndCurious from './FeatureAndCurious';
-import NewsletterFull from './NewsletterFull';
 import Reviews from './Reviews';
 import WhyChoosingUs from './WhyChoosingUs';
 
