@@ -39,9 +39,8 @@ const Slider = () => {
                   <Image src={staricon} alt="star icon" />
                 </div>
                 <h2 className="text-cyan text-shadow font-inter text-3xl lg:text-4xl lg:font-medium lg:leading-[52px] lg:tracking-[-.96px] w-[90vw] md:w-auto mb-6">
-                  We've really sped up our workflow using{' '}
-                  <span className="gradientText">Bookitu</span> and haven't
-                  looked back.
+                  We've really sped up our workflow using <span>Bookitu</span>{' '}
+                  and haven't looked back.
                 </h2>
                 <div className="flex justify-between items-center lg:mt-12">
                   {/* reviewer */}
