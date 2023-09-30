@@ -62,7 +62,7 @@ const Navbar = () => {
                 } p-1 font-inter lg:leading-[24px]`}
                 aria-current="page"
               >
-                About Us
+                About us
               </Link>
             </li>
             <li>

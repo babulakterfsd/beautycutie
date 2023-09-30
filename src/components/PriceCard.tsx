@@ -4,12 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useState } from 'react';
 import Ajaira from '../../public/assets/images/ajaira.png';
+import bomimg from '../../public/assets/images/bom.png';
+import socityimg from '../../public/assets/images/sociietypricingicon.png';
+import squadimg from '../../public/assets/images/squadpricingicon.png';
 
 const pricingData = [
   {
     name: 'Maverick',
     monthlyPrice: 10,
     annualPrice: 100,
+    icon: bomimg,
     features: [
       'Access to basic features',
       'Basic reporting and analytics',
@@ -22,6 +26,7 @@ const pricingData = [
     name: 'Squad',
     monthlyPrice: 20,
     annualPrice: 200,
+    icon: squadimg,
     features: [
       'Access to basic features',
       'Basic reporting and analytics',
@@ -34,6 +39,7 @@ const pricingData = [
     name: 'Society',
     monthlyPrice: 30,
     annualPrice: 300,
+    icon: socityimg,
     features: [
       'Access to basic features',
       'Basic reporting and analytics',
@@ -80,10 +86,10 @@ function PriceCard() {
             </div>
           </div>
         </div>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 gap-y-14 mt-6 md:mt-0">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 gap-y-14 mt-6 md:mt-5">
           {pricingData.map((plan, index) => (
             <div
-              className="card relative h-auto w-auto bg-gray-50 rounded-lg"
+              className="card relative h-auto w-auto  rounded-sm shadow-sm"
               key={index}
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -127,11 +133,10 @@ function PriceCard() {
                   Get started
                 </button>
               </div>
-              <div className="text-center absolute -top-4 left-0 right-0">
-                <FontAwesomeIcon
-                  icon={faCircleCheck}
-                  className="text-primary text-4xl inline-block"
-                />
+              <div className="flex justify-center items-center absolute -top-8 left-0 right-0">
+                <div className="flex justify-center items-center bg-[#FFEEED] p-2 rounded-full w-14 h-14">
+                  <Image src={plan.icon} alt="icon" width={20} height={20} />
+                </div>
               </div>
             </div>
           ))}
