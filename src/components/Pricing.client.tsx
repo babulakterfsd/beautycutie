@@ -19,26 +19,26 @@ const Pricing = () => {
           </h4>
           <div className="flex justify-center items-center gap-x-0 mb-4 lg:mb-5">
             <h5
-              className="hidden lg:block text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative"
+              className="hidden lg:block text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3"
               data-aos="fade-down"
               data-aos-duration="1500"
             >
               Your time matters to us
             </h5>
+            <Image
+              src={ultasurjo}
+              alt="Ultasurjo"
+              className=" hidden lg:block h-20 w-20 object-contain -mt-16 -ml-4"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            />
             <h5
-              className="block lg:hidden text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3 relative"
+              className="block lg:hidden text-cyan text-center text-4xl px-2 font-semibold lg:leading-[44px] lg:tracking-[-.72px] -ml-3"
               data-aos="fade-down"
               data-aos-duration="1500"
             >
               Plans that fit your scale
             </h5>
-            <Image
-              src={ultasurjo}
-              alt="Ultasurjo"
-              className="absolute hidden lg:block h-20 w-20 top-24 lg:top-36 lg:right-[27rem] -right-[0.5rem] object-contain"
-              data-aos="fade-down"
-              data-aos-duration="1500"
-            />
           </div>
           <p
             className="font-inter lg:text-[1.2rem] text-lg leading-[30px] text-cyan px-4 md:px-16 text-center lg:w-4/6 lg:mx-auto"
