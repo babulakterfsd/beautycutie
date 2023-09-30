@@ -54,7 +54,7 @@ const ContactForm = () => {
               htmlFor="4"
               className="block font-normal text-cyan font-inter mb-2"
             >
-              Phone
+              Phone <span className="ml-[1px] text-primary">*</span>
             </label>
             <div className="relative flex items-center">
               <input
@@ -62,6 +62,7 @@ const ContactForm = () => {
                 type="number"
                 className="peer relative pl-24 pr-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out appearance-none border rounded w-full py-2.5 px-3.5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="+1 054584545"
+                required
               />
               <select className="material-symbols-outlined absolute left-2 transition-all duration-200 ease-in-out outline-none">
                 <option value="1">Us</option>
@@ -76,13 +77,14 @@ const ContactForm = () => {
               className="block font-normal text-cyan font-inter mb-2"
               htmlFor="email"
             >
-              Email
+              Email <span className="ml-[1px] text-primary">*</span>
             </label>
             <input
               className="appearance-none border rounded w-full py-2.5 px-3.5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
               placeholder="Email"
+              required
             />
           </div>
 
@@ -91,13 +93,14 @@ const ContactForm = () => {
               className="block font-normal text-cyan font-inter mb-2"
               htmlFor="message"
             >
-              Message
+              Message <span className="ml-[1px] text-primary">*</span>
             </label>
             <textarea
               className="appearance-none border rounded w-full py-2.5 px-3.5 font-normal text-cyan font-inter leading-tight focus:outline-none focus:shadow-outline"
               id="message"
               rows={6}
               placeholder="Your Message"
+              required
             ></textarea>
           </div>
           <div className="mb-4 md:mb-8">
