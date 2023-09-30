@@ -86,7 +86,7 @@ function PriceCard() {
             </div>
           </div>
         </div>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 gap-y-14 mt-6 md:mt-5">
+        <div className="grid gap-5 lg:grid-cols-3 gap-y-14 mt-6 md:mt-5">
           {pricingData.map((plan, index) => (
             <div
               className="card relative h-auto w-auto  rounded-sm shadow-sm"
