@@ -71,14 +71,14 @@ const SingleBlogPost = () => {
       <Image
         src={singleblogimg}
         alt="single blog image"
-        className="mt-14 mb-24 hidden md:block"
+        className="mt-14 mb-24 hidden sm:block"
         data-aos="fade-up"
         data-aos-duration="1500"
       />
       <Image
         src={singleblogimgmob}
         alt="single blog image"
-        className="mt-10 mb-16 md:hidden mx-auto"
+        className="mt-10 mb-16 sm:hidden mx-auto"
         data-aos="fade-up"
         data-aos-duration="1500"
       />
