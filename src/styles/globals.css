@@ -121,7 +121,6 @@ body {
   }
 }
 
-
 /* scroll to top */
 
 @font-face {
@@ -129,7 +128,6 @@ body {
   src: url('../../public/assets/fonts/fa/fa-solid-900.ttf') format('truetype'),
     url('../../public/assets/fonts/fa/fa-solid-900.woff2') format('woff2');
 }
-
 
 .scrollToTop {
   position: relative;
