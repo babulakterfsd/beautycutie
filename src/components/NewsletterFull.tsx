@@ -54,7 +54,7 @@ const NewsletterFull = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#A8DDE6] md:h-[42px] lg:h-[42px] hidden md:flex items-center text-center rounded-lg md:px-3 lg:px-4 md:py-5 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold md:ml-4 lg:ml-0"
+              className="bg-[#FFAAA5] md:h-[42px] lg:h-[42px] hidden md:flex items-center text-center rounded-lg md:px-3 lg:px-4 md:py-5 lg:py-[8px] text-white font-inter lg:tracking-[-0.205px] font-semibold md:ml-4 lg:ml-0"
             >
               Subscribe
             </button>

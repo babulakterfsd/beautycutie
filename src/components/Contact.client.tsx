@@ -71,7 +71,7 @@ const Contact = () => {
                 <FontAwesomeIcon
                   icon={faWhatsapp}
                   style={{ color: 'rgba(255, 170, 165, 1)' }}
-                  className=" object-contain text-center mx-auto mb-4 lg:mb-5 shadow-lg rounded-full bg-[#feeeeb] p-2 h-9 w-9"
+                  className=" object-contain text-center mx-auto mb-4 lg:mb-5 shadow-lg rounded-full bg-[#feeeeb] p-2 h-5 w-5"
                 />
                 <h5 className="text-xl leading-8 font-semibold text-cyan font-inter">
                   What’s app
