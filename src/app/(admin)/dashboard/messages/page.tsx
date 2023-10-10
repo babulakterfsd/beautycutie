@@ -7,7 +7,6 @@ const MessagePage = () => {
     { id: 1, username: 'User1' },
     { id: 2, username: 'User2' },
     { id: 3, username: 'User3' },
-    // Add more users as needed
   ];
 
   const messages: Message[] = generateRandomMessages(100, users);
