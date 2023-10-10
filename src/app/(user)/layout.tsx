@@ -1,10 +1,10 @@
 import Footer from '@/components/shared/Footer';
 import Navbar from '@/components/shared/Navbar';
 import ClientLayout from '@/components/shared/layout';
+import AppContextProvider from '@/context/GlobalContext';
 import 'aos/dist/aos.css';
 import { Metadata } from 'next';
-import AppContextProvider from '../context/GlobalContext';
-import '../styles/globals.css';
+import '../../styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Bookitu',
