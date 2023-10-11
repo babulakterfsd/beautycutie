@@ -1,33 +1,34 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import logo from '../../../public/assets/images/dahboardLogo.png';
-import blog from '../../../public/assets/images/sidebar-logo-1.png';
-import messages from '../../../public/assets/images/sidebar-logo-2.png';
-import profile from '../../../public/assets/images/sidebar-logo-3.png';
-import logout from '../../../public/assets/images/sidebar-logo-4.png';
-import users from '../../../public/assets/images/sidebar-logo.png';
+
+const logo = '/assets/images/dahboardLogo.png';
+const blog = '/assets/images/sidebar-logo-1.png';
+const messages = '/assets/images/sidebar-logo-2.png';
+const profile = '/assets/images/sidebar-logo-3.png';
+const logout = '/assets/images/sidebar-logo-4.png';
+const users = '/assets/images/sidebar-logo.png';
 
 const DashboardSideBar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="sidebarBg h-full w-full relative border-r border-slate-300">
+    <div className="h-full w-full relative bg-white">
       <div className="">
         <div className="logo leading-[60px] mb-[64px] ">
-          <Link className=" block mb-[32px]" href={'/dashboard'}>
+          <Link className=" block mb-[32px] lg:mt-8" href="/dashboard">
             <Image
-              className=" h-[68px] w-[65px] "
+              className="h-[68px] w-[65px]"
               src={logo}
               height={68}
               width={65}
-              alt="llllll"
+              alt="dashboardmenu"
             />
           </Link>
         </div>
         <Link
           className={`${
-            pathName == '/dashboard' && ' bg-red-700'
+            pathName == '/dashboard'
           } md:mb-[32px] text-center  flex items-center justify-center mt-3`}
           href={'/dashboard'}
         >
@@ -36,12 +37,12 @@ const DashboardSideBar = () => {
             src={users}
             height={21}
             width={24}
-            alt="llllll"
+            alt="dashboardmenu"
           />
         </Link>
         <Link
           className={`${
-            pathName == '/dashboard/blog-post' && ' bg-red-700'
+            pathName == '/dashboard/blog-post'
           } md:mb-[32px] text-center  flex items-center justify-center `}
           href={'/dashboard/blog-post'}
         >
@@ -50,12 +51,12 @@ const DashboardSideBar = () => {
             src={blog}
             height={18}
             width={24}
-            alt="llllll"
+            alt="dashboardmenu"
           />
         </Link>
         <Link
           className={`${
-            pathName == '/dashboard/messages' && ' bg-red-700'
+            pathName == '/dashboard/messages'
           } text-center  flex items-center justify-center mt-3`}
           href={'/dashboard/messages'}
         >
@@ -64,27 +65,27 @@ const DashboardSideBar = () => {
             src={messages}
             height={21}
             width={24}
-            alt="llllll"
+            alt="dashboardmenu"
           />
         </Link>
       </div>
       <div className=" w-full  md:absolute md:bottom-1 text-center mx-auto">
         <div className=" text-center  flex items-center justify-center mb-[32px]">
           <Image
-            className=" h-[24px] w-[24px]  mr-[6px]"
+            className=" h-[24px] w-[24px] mr-[6px] cursor-pointer"
             src={profile}
             height={24}
             width={24}
-            alt="llllll"
+            alt="dashboardmenu"
           />
         </div>
         <div className=" text-center  flex items-center justify-center mb-[32px]">
           <Image
-            className=" h-[24px] w-[24px] "
+            className=" h-[24px] w-[24px] cursor-pointer"
             src={logout}
             height={24}
             width={24}
-            alt="llllll"
+            alt="dashboardmenu"
           />
         </div>
       </div>

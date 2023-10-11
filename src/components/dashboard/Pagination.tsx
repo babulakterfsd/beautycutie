@@ -1,81 +1,42 @@
 'use client';
 
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Pagination = () => {
-  // Number of total items
-  const totalItems = 100;
-
-  // Number of items to show on each "side" of the middle section
-  const sideItemCount = 3;
-
-  // Current page (for demonstration, you can adjust this as needed)
-  const currentPage = 1;
-
-  // Calculate the start and end index for the middle section
-  const middleStart = Math.max(1, currentPage - sideItemCount);
-  const middleEnd = Math.min(totalItems, currentPage + sideItemCount);
-
-  // Create an array of numbers for the middle section
-  const middleItems = Array.from(
-    { length: middleEnd - middleStart + 1 },
-    (_, index) => middleStart + index
-  );
-
   return (
-    <nav className="flex flex-wrap justify-center mt-4 padding-bottom md:pb-10">
-      <ul className="flex space-x-2 items-center flex-wrap">
-        <li>
-          <button className="px-3 py-2 rounded-full bg-slate-600 text-white">
-            Previous
-          </button>
-        </li>
-        {middleStart > 1 && (
-          <li>
-            <span className="px-3 py-2 rounded-full bg-slate-600 text-gray-600 hover:bg-blue-500 hover:text-white">
-              1
-            </span>
-          </li>
-        )}
-        {middleStart > 2 && (
-          <li>
-            <span className="px-3 py-2 rounded-full bg-slate-600 text-gray-600 hover:bg-blue-500 hover:text-white">
-              ...
-            </span>
-          </li>
-        )}
-        {middleItems.map((pageNumber) => (
-          <li key={pageNumber}>
-            <button
-              className={`px-6 py-1 rounded-md ${
-                currentPage === pageNumber
-                  ? 'bg-slate-600 text-white'
-                  : 'bg-gray-200 text-gray-600 hover:bg-slate-800 hover:text-white'
-              }`}
-            >
-              {pageNumber}
-            </button>
-          </li>
-        ))}
-        {middleEnd < totalItems - 1 && (
-          <li>
-            <span className="px-3 py-2 rounded-md bg-gray-200 text-gray-600 hover:bg-slate-800 hover:text-white">
-              ...
-            </span>
-          </li>
-        )}
-        {middleEnd < totalItems && (
-          <li>
-            <span className="px-3 py-2 rounded-md bg-gray-200 text-gray-600 hover:bg-slate-800 hover:text-white">
-              {totalItems}
-            </span>
-          </li>
-        )}
-        <li>
-          <button className="px-3 py-2 rounded-full bg-slate-600 text-white">
-            Next
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <div className="hidden md:flex justify-between items-center mt-4">
+        <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-2" /> Previous
+        </button>
+        <div className="flex gap-x-3">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => {
+            return (
+              <button
+                key={item}
+                className="bg-gray-200 w-8 h-8 rounded-md flex items-center justify-center"
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
+        <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+          Next <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </button>
+      </div>
+      {/* pagination mobile */}
+      <div className="flex md:hidden justify-between items-center mt-4">
+        <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
+        <p className="text-cyan font-bold md:font-semibold">Page 1 of 9</p>
+        <button className="border border-gray-200 py-1.5 px-3 rounded-lg text-cyan font-semibold">
+          <FontAwesomeIcon icon={faArrowRight} />
+        </button>
+      </div>
+    </>
   );
 };
 

@@ -6,34 +6,32 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaAlignLeft } from 'react-icons/fa6';
-import logo from '../../../public/assets/images/dahboardLogo.png';
+const logo = '/assets/images/dahboardLogo.png';
 
 const DashboardLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const { isDashboardOpen, setIsDashboardOpen } = useAppContext();
 
   return (
     <div className="w-screen h-screen">
-      {/* <NextTopLoader height={3} showSpinner={false} /> */}
-
       <div className=" w-full h-screen  md:overflow-hidden">
         <div className="md:flex w-screen">
-          <div className=" hidden md:flex md:w-[74px] mx-auto h-screen overflow-hidden">
+          <div className="hidden md:flex md:w-[100px] mx-auto h-screen overflow-hidden">
             <DashboardSideBar />
           </div>
-          <div className=" w-screen md:w-4/5 flex-1 ">
-            <div className=" hidden md:block">
+          <div className="w-screen md:w-4/5 flex-1">
+            <div className="hidden md:block">
               <DashboardHeader />
             </div>
             <div className=" block md:hidden w-full">
-              <div className="flex justify-between    w-full">
+              <div className="flex justify-between w-full">
                 <div className="logo">
-                  <Link className=" block mb-[32px]" href={'/dashboard'}>
+                  <Link className=" block mb-[32px]" href="/">
                     <Image
                       className=" h-[68px] w-[65px] "
                       src={logo}
                       height={68}
                       width={65}
-                      alt="llllll"
+                      alt="dashboard"
                     />
                   </Link>
                 </div>

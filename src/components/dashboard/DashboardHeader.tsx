@@ -20,9 +20,9 @@ const DashboardHeader = () => {
   ];
   const month = monthNames[today.getMonth()];
   return (
-    <div className=" hidden md:flex    w-full mx-auto leading-[60px] relative">
-      <div className="items-center mx-auto mt-3">
-        <h1 className="  text-[#2C3E50]  font-bold text-base text-center">
+    <div className=" hidden md:flex w-full mx-auto">
+      <div className="items-center mx-auto">
+        <h1 className="text-[#2C3E50] font-bold text-base lg:text-2xl text-center font-inter lg:mt-8 lg:mb-16">
           Today is {day}th {month}
         </h1>
       </div>

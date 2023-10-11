@@ -1,9 +1,9 @@
 'use client';
 
 import { FaPrint } from 'react-icons/fa';
-import NewQueries from './NewQueries';
 import { Button, CustomSelect, FileUpload } from './blog-post';
 import BlogForm from './blog-post/BlogForm';
+import NewQueries from './NewQueries';
 
 const BlogPost = () => {
   const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];

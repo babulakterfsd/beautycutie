@@ -57,9 +57,6 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
-.sidebarBg {
-  background-color: #ffffff;
-}
 .gradientBg {
   background: linear-gradient(248deg, #a8dde6 0.94%, #ffa5a5 100%);
 }
