@@ -22,13 +22,15 @@ const Navbar = () => {
       {/* desktop menu */}
       <div className="hidden main-container md:flex items-center justify-between p-4 col-span-12 ">
         <div className="flex order-2 gap-x-4 lg:gap-x-8">
-          <button
-            aria-label="Login"
-            type="button"
-            className={`${Styles.hanimation} font-inter font-semibold leading-[24px]`}
-          >
-            Log in
-          </button>
+          <Link href="/dashboard" className="block self-center">
+            <button
+              aria-label="Login"
+              type="button"
+              className={`${Styles.hanimation} font-inter font-semibold leading-[24px]`}
+            >
+              Log in
+            </button>
+          </Link>
           <button
             type="button"
             className="text-white bg-primary px-5 py-3 rounded-md font-inter font-semibold leading-[24px]"
