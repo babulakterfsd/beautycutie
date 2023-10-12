@@ -2,9 +2,8 @@ import DashboardHome from '@/components/dashboard/DashboardHome';
 
 const DashboardHomePage = () => {
   return (
-    <div className="  h-screen w-full">
+    <div className="h-screen w-full mb-6">
       <DashboardHome />
-      {/* <h1>DashboardHomePage</h1> */}
     </div>
   );
 };

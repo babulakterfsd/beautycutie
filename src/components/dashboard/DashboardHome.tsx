@@ -3,134 +3,93 @@
 import { useEffect, useState } from 'react';
 import { FaArrowDownLong, FaEllipsisVertical } from 'react-icons/fa6';
 import NewQueries from './NewQueries';
+import Pagination from './Pagination';
 
 type TableData = {
   name: string;
-  status: 'active' | 'inactive';
-  subcriptionDate: string;
+  status: 'Active' | 'Inactive';
+  subscriptionDate: string;
   email: string;
+  username: string;
 };
 
 const tableData: TableData[] = [
   {
-    name: 'John1',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john1@gmail.com',
+    name: 'Alice',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'alice@gmail.com',
+    username: 'alice',
   },
   {
-    name: 'John2',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john2@gmail.com',
+    name: 'Bob',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'bob@gmail.com',
+    username: 'bob',
   },
   {
-    name: 'John3',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john3@gmail.com',
+    name: 'Charlie',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'charlie@gmail.com',
+    username: 'charlie',
   },
   {
-    name: 'John4',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john4@gmail.com',
+    name: 'David',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'david@gmail.com',
+    username: 'david',
   },
   {
-    name: 'John5',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john5@gmail.com',
+    name: 'Eve',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'eve@gmail.com',
+    username: 'eve',
   },
   {
-    name: 'John6',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john6@gmail.com',
+    name: 'Frank',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'frank@gmail.com',
+    username: 'frank',
   },
   {
-    name: 'John7',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john7@gmail.com',
+    name: 'Grace',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'grace@gmail.com',
+    username: 'grace',
   },
   {
-    name: 'John8',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john8@gmail.com',
+    name: 'Hannah',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'hannah@gmail.com',
+    username: 'hannah',
   },
   {
-    name: 'John9',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john1@gmail.com',
+    name: 'Isaac',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'isaac@gmail.com',
+    username: 'isaac',
   },
   {
-    name: 'John10',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john10@gmail.com',
+    name: 'Jack',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'jack@gmail.com',
+    username: 'jack',
   },
   {
-    name: 'John1',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john1@gmail.com',
-  },
-  {
-    name: 'John2',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john2@gmail.com',
-  },
-  {
-    name: 'John3',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john3@gmail.com',
-  },
-  {
-    name: 'John4',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john4@gmail.com',
-  },
-  {
-    name: 'John5',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john5@gmail.com',
-  },
-  {
-    name: 'John6',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john6@gmail.com',
-  },
-  {
-    name: 'John7',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john7@gmail.com',
-  },
-  {
-    name: 'John8',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john8@gmail.com',
-  },
-  {
-    name: 'John9',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john1@gmail.com',
-  },
-  {
-    name: 'John10',
-    subcriptionDate: new Date().toLocaleDateString(),
-    status: 'active',
-    email: 'john10@gmail.com',
+    name: 'Alice',
+    subscriptionDate: '10/12/2023',
+    status: 'Active',
+    email: 'alice@gmail.com',
+    username: 'alice',
   },
 ];
 //nested data is ok, see accessorKeys in ColumnDef below
@@ -142,33 +101,30 @@ const DashboardHome = () => {
   }, []);
 
   return isloading ? (
-    <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3 md:ml-3 ">
-      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+    <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3">
+      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border border-gray-50 shadow-lg">
         <div className="flex justify-between items-center mt-[15px] md:mt-[20px] mb-[12px]">
-          <div className="flex pl-2 md:pl-0  gap-2 md:ml-[24px]">
-            <h1 className="text-[12px] font-medium md:text-[18px] leading-[18px]">
+          <div className="flex pl-2 md:pl-0  gap-2 md:ml-[24px] items-center">
+            <h1 className="font-inter text-cyan text-[12px] font-semibold lg:text-[18px] lg:leading-[18px]">
               Subscriber
             </h1>
-            <span className="text-[12px]  font-semibold leading-[18px] text-[#FFAAA5]">
+            <span className="text-[12px]  font-semibold leading-[18px] text-primary bg-red-50 rounded-full px-4 py-1">
               100 users
             </span>
           </div>
-          <FaEllipsisVertical />
+          <span className="cursor-pointer">
+            <FaEllipsisVertical />
+          </span>
         </div>
 
         <div className=" mx-auto ">
-          <table className="min-w-full bg-white ">
+          <table className="min-w-full mx-auto bg-white">
             <thead className="  w-full  rounded-lg">
-              <tr className=" ">
+              <tr className="">
                 <th className="px-1 py-3 text-left text-xs font-medium  tracking-wider">
                   <div className="flex items-center md:ml-[24px]">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value=""
-                      className=" w-[20px]  h-[20px] rounded-md  bg-gray-100    border  border-gray-300 "
-                    />
-                    <span className="  ml-2 block  leading-[18px]	 text-[12px] font-medium">
+                    <div className="flex items-center pl-4 border border-gray-200 rounded-md w-5 h-5"></div>
+                    <span className="ml-2 block text-[12px] font-inter text-cyan font-medium lg:leading-[18px]">
                       Name
                     </span>
                   </div>
@@ -190,45 +146,45 @@ const DashboardHome = () => {
                 <th className="px-6 py-3 leading-[18px]  text-[12px] font-medium">
                   Email address
                 </th>
-                <th className="px-6 py-3 text-left  font-medium text-gray-500 tracking-wider text-lg	"></th>
+                <th className="px-6 py-3 text-[12px] font-medium"></th>
               </tr>
             </thead>
             <tbody>
               {tableData.map((person, index) => (
-                <tr key={index} className=" leading-[73px]">
+                <tr key={index} className="">
                   <td className="px-1 md:ml-[24px] flex items-center gap-x-2 ">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value=""
-                      className="w-[20px]  h-[20px] rounded-md  bg-gray-100    border  border-gray-300"
-                    />
+                    <div className="flex items-center pl-4 border border-gray-200 rounded-md w-5 h-5"></div>
 
-                    <span className="leading-[20px] font-medium text-[14px]">
-                      {person.name}
-                    </span>
+                    <div className="flex flex-col gap-y-1">
+                      <span className="lg:leading-[20px] font-medium text-[14px] font-inter text-cyan">
+                        {person.name}
+                      </span>
+                      <span className="text-[14px] font-inter text-cyan">
+                        {`@${person.username}`}
+                      </span>
+                    </div>
                   </td>
 
-                  <td className=" whitespace-nowrap text-sm text-gray-900">
-                    <div className="flex gap-x-2 px-2 py-2 items-center justify-center  bg-[#ECFDF3] rounded-3xl">
-                      <span className=" h-[10px] w-[10px] rounded-full bg-[#12B76A]" />
-                      <span className=" text-[#027A48] leading-[20px] font-medium text-[12px]">
+                  <td className="text-sm">
+                    <div className="flex gap-x-2 items-center justify-center  bg-[#ECFDF3] rounded-3xl w-[75px]">
+                      <span className=" h-[8px] w-[8px] rounded-full bg-[#12B76A]" />
+                      <span className=" text-[#027A48] font-medium text-[12px]">
                         {person.status}
                       </span>
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
-                    {person.subcriptionDate}
+                    {person.subscriptionDate}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
                     {person.email}
                   </td>
-                  <td className="px-6 flex items-center gap-x-5 py-4 whitespace-nowrap text-sm text-gray-900">
+                  <td className="px-6 flex items-center gap-x-5 py-4 whitespace-nowrap text-sm text-cyan">
                     <svg
                       className=" cursor-pointer"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="14"
+                      height="14"
                       viewBox="0 0 20 20"
                       fill="none"
                     >
@@ -243,8 +199,8 @@ const DashboardHome = () => {
                     <svg
                       className=" cursor-pointer"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="14"
+                      height="14"
                       viewBox="0 0 20 20"
                       fill="none"
                     >
@@ -261,6 +217,7 @@ const DashboardHome = () => {
               ))}
             </tbody>
           </table>
+          <Pagination />
         </div>
       </div>
       <div className="dashboard-content order-1 overflow-x-scroll md:order-2 w-full md:w-1/3 ">

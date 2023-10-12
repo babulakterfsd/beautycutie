@@ -50,23 +50,23 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
   const isAdminContentTooLong = adminNote.length > 400;
 
   return (
-    <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3 md:ml-3 ">
+    <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3 md:ml-3 mb-6">
       <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200">
         <div className=" mx-auto ">
           <table className="min-w-full bg-white ">
             <thead className="  w-full  rounded-lg">
-              <tr className=" ">
+              <tr className="flex justify-between">
                 <th className="px-1 py-3 text-left text-xs font-medium  tracking-wider">
                   <div className="flex items-center md:ml-[24px]">
                     <span className="   md:ml-2 block  md:leading-[18px]	 text-[12px] font-medium">
-                      User Id
+                      UserName
                     </span>
                   </div>
                 </th>
                 <th className="px-1 py-3 text-center  text-xs font-medium text-gray-500 tracking-wider">
                   <div className="flex items-center justify-center">
                     <span className="ml-[3px] md:mr-[3px] md:leading-[18px]	 text-[#67748E)] text-[12px] font-medium">
-                      User Name
+                      Email
                     </span>
                   </div>
                 </th>
@@ -76,29 +76,29 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
                 <th className="px-6 py-3 md:leading-[18px]  text-[12px] font-medium">
                   Message
                 </th>
-
-                <th className="px-6 py-3 text-left  font-medium text-gray-500 tracking-wider text-lg	"></th>
+                <th className="px-6 py-3 md:leading-[18px]  text-[12px] font-medium">
+                  view
+                </th>
               </tr>
             </thead>
             <tbody>
               {messages.map((message, index) => (
-                <tr key={index} className=" leading-[73px]">
-                  <td className="px-1 md:ml-[24px] flex items-center gap-x-2 ">
-                    <span className="leading-[20px] font-medium text-[14px]">
-                      {message.userId}
+                <tr key={index} className="flex items-center justify-between">
+                  <td className="px-1 md:ml-[24px] flex items-center gap-x-2 text-center">
+                    <span className="font-medium text-[14px] text-cyan">
+                      {message.username}
                     </span>
                   </td>
 
-                  <td className=" whitespace-nowrap text-sm text-gray-900">
-                    <div className="flex gap-x-2 px-2 py-2 items-center justify-center  bg-[#ECFDF3] rounded-3xl">
-                      <span className=" h-[10px] w-[10px] rounded-full bg-[#12B76A]" />
-                      <span className=" text-[#027A48] leading-[20px] font-medium text-[12px]">
-                        {message.username}
+                  <td className="text-sm text-cyan">
+                    <div className="flex gap-x-2 px-2 py-2 items-center justify-center">
+                      <span className=" leading-[20px] font-medium text-[12px]">
+                        {message.email}
                       </span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
-                    {message.text}
+                  <td className="px-6 py-4 text-center text-[14px] text-cyan font-inter">
+                    {message.message}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
                     <BsFillEyeFill
