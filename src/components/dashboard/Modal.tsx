@@ -27,10 +27,10 @@ const Modal: React.FC<React.PropsWithChildren<ModalProps>> = ({
                 <p className=" font-semibold text-sm">{info}</p>
               </div>
               <button
-                className="text-gray-500 hover:text-gray-700"
+                className="text-gray-500 hover:text-gray-700 text-[18px] font-semibold text-cyan font-inter"
                 onClick={onClose}
               >
-                &times;
+                x
               </button>
             </div>
             <div className="overflow-y-auto  h-3/4">{children}</div>

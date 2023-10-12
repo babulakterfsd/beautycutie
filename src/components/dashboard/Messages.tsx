@@ -2,6 +2,7 @@
 import { Message } from '@/types/global.types';
 import React, { useState } from 'react';
 import { BsFillEyeFill, BsFillInfoCircleFill } from 'react-icons/bs';
+import { FaEllipsisVertical } from 'react-icons/fa6';
 import Input from './Input';
 import Modal from './Modal';
 import NewQueries from './NewQueries';
@@ -51,10 +52,23 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
 
   return (
     <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3 md:ml-3 mb-6">
-      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100">
-        <div className=" mx-auto ">
-          <table className="min-w-full bg-white ">
-            <thead className="  w-full  rounded-lg">
+      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100">
+        <div className="flex justify-between items-center mt-[15px] md:mt-[20px] mb-[20px] md:p-3">
+          <div className="flex pl-2 md:pl-0  gap-2 md:ml-[24px] items-center">
+            <h1 className="font-inter text-cyan text-[12px] font-semibold lg:text-[18px] lg:leading-[18px]">
+              Messages
+            </h1>
+            <span className="text-[12px]  font-semibold leading-[18px] text-primary bg-red-50 rounded-full px-4 py-1">
+              12 messages
+            </span>
+          </div>
+          <span className="cursor-pointer">
+            <FaEllipsisVertical />
+          </span>
+        </div>
+        <div className=" mx-auto">
+          <table className="min-w-full">
+            <thead className="w-full bg-[#f9fafb]">
               <tr className="flex justify-between">
                 <th className="px-1 py-3 text-left text-xs font-medium  tracking-wider">
                   <div className="flex items-center md:ml-[24px]">
@@ -76,14 +90,16 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
                 <th className="px-6 py-3 md:leading-[18px]  text-[12px] font-medium">
                   Message
                 </th>
-                <th className="px-6 py-3 md:leading-[18px]  text-[12px] font-medium">
-                  view
-                </th>
+                <th className="px-6 py-3 md:leading-[18px]  text-[12px] font-medium"></th>
               </tr>
             </thead>
             <tbody>
               {messages.map((message, index) => (
-                <tr key={index} className="flex items-center justify-between">
+                <tr
+                  key={index}
+                  className="flex items-center justify-between border-l-0 border-r-0 border border-gray-100 hover:bg-[#f9fafb] hover:cursor-pointer"
+                  onClick={openModal}
+                >
                   <td className="px-1 md:ml-[24px] flex items-center gap-x-2 text-center">
                     <span className="font-medium text-[14px] text-cyan">
                       {message.username}
@@ -101,10 +117,7 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
                     {message.message}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
-                    <BsFillEyeFill
-                      onClick={openModal}
-                      className=" cursor-pointer"
-                    />
+                    <BsFillEyeFill className=" cursor-pointer" />
                   </td>
                 </tr>
               ))}
@@ -242,7 +255,9 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
             </div>
           </div>
         </Modal>
-        <Pagination />
+        <div className="md:p-3">
+          <Pagination />
+        </div>
       </div>
       <div className="dashboard-content order-1 overflow-x-scroll md:order-2 w-full md:w-1/3 ">
         <NewQueries />
