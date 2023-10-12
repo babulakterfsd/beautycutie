@@ -51,7 +51,7 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
 
   return (
     <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3 md:ml-3 mb-6">
-      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 shadow-lg md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100">
         <div className=" mx-auto ">
           <table className="min-w-full bg-white ">
             <thead className="  w-full  rounded-lg">
