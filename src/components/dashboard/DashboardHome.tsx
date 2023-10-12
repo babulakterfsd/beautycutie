@@ -102,8 +102,8 @@ const DashboardHome = () => {
 
   return isloading ? (
     <div className="">
-      <div className="dashboard-container w-screen flex flex-col gap-y-8 md:flex-row gap-x-[20px] md:h-screen md:mt-3">
-        <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12  rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100 shadow-lg px-2 md:px-0 pb-4 md:pb-0">
+      <div className="dashboard-container w-screen flex flex-col gap-y-8 md:flex-row gap-x-[20px] lg:h-screen md:mt-3">
+        <div className="dashboard-content order-2 lg:order-1  mx-auto  w-full  md:w-8/12  rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100 shadow-lg px-2 md:px-0 pb-4 md:pb-0">
           <div className="flex justify-between items-center mt-[15px] md:mt-[20px] mb-[20px] md:p-3">
             <div className="flex pl-2 md:pl-0  gap-2 md:ml-[24px] items-center">
               <h1 className="font-inter text-cyan text-base font-semibold lg:text-[18px] lg:leading-[18px]">
@@ -224,7 +224,7 @@ const DashboardHome = () => {
             </div>
           </div>
         </div>
-        <div className="dashboard-content order-1 overflow-x-scroll md:order-2 w-full md:w-1/3">
+        <div className="dashboard-content order-1 overflow-x-scroll lg:order-2 w-full md:w-1/3">
           <NewQueries />
         </div>
       </div>
