@@ -14,7 +14,7 @@ const NewQueries = () => {
         <h1 className="text-[14px] md:text-[18px] font-inter text-cyan font-bold  lg:font-semibold leading-[28px] my-4">
           New Queries
         </h1>
-        <div className="h-[144px] w-full border-b border-gray-300 lg:px-4 ">
+        <div className="h-[144px] w-full border-b border-gray-300 px-4 ">
           <div className="w-full flex justify-between items-center">
             <h1 className="text-base md:text-[18px] font-bold  lg:font-semibold leading-[28px] text-cyan font-inter">
               Andi lane
@@ -26,14 +26,14 @@ const NewQueries = () => {
           <h3 className=" text-[#67748E] mt-[4px] md:mt-[8px] text-[12px]  md:text-[16px] font-[700] lg:font-semibold leading-[24px]  ">
             {timeString}
           </h3>
-          <p className="mt-2 md:mt-4 text-[#67748E] text-[14px] md:text-[16px] leading-[24px] font-medium lg:font-normal">
+          <p className="mt-2 md:mt-4 text-[#67748E] text-[14px] md:text-[16px] leading-[24px] font-medium md:font-normal">
             How to access this feature
           </p>
         </div>
         <div className="h-[144px] w-full border-b border-slate-300">
-          <div className="w-full p-3  md:p-0  md:mt-[32px] lg:px-4">
+          <div className="w-full p-3  md:mt-[32px] px-4">
             <div className="flex justify-between items-center">
-              <h1 className="text-[14px] md:text-[18px] font-bold lg:font-semibold leading-[18px] md:leading-[28px] text-[#67748E]">
+              <h1 className="text-base md:text-[18px] font-bold lg:font-semibold leading-[18px] md:leading-[28px] text-[#67748E]">
                 Andi lane
               </h1>
               <div className="flex bg-[#F9F5FF] px-4 py-1 rounded-3xl items-center gap-x-1">
