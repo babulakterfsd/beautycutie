@@ -11,7 +11,7 @@ import {
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaSignOutAlt } from 'react-icons/fa';
+import { FaHome, FaSignOutAlt } from 'react-icons/fa';
 
 const MobileMenuBar: React.FC = () => {
   const { isDashboardOpen, setIsDashboardOpen } = useAppContext();
@@ -51,7 +51,7 @@ const MobileMenuBar: React.FC = () => {
             href={'/dashboard/blog-post'}
           >
             <FaFilePen className="text-primary" size={18} />
-            <span className="font-bold ml-2">Post</span>
+            <span className="font-bold ml-2">Post Blog</span>
           </Link>
           <Link
             onClick={() => setIsDashboardOpen(false)}
@@ -60,6 +60,14 @@ const MobileMenuBar: React.FC = () => {
           >
             <FaRegEnvelope className="text-primary" size={18} />
             <span className="font-bold ml-2">Messages</span>
+          </Link>
+          <Link
+            onClick={() => setIsDashboardOpen(false)}
+            className=" text-center  flex items-center justify-center mt-6"
+            href={'/'}
+          >
+            <FaHome className="text-primary" size={18} />
+            <span className="font-bold ml-2">Homepage</span>
           </Link>
         </div>
         <div className=" w-full  absolute bottom-1 text-center ">
