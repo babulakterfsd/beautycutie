@@ -19,7 +19,7 @@ const FileUpload: React.FC<IUpload> = ({ title, acceptOnly }) => {
 
   return (
     <div>
-      <div className=" flex flex-col mb-[16px] items-center w-screen h-1/4 md:w-4/6 border-2 border-gray-100 rounded-xl">
+      <div className=" flex flex-col items-center w-4/5 mx-auto md:mx-0 mt-5 mb-3 h-1/4 md:w-4/6 border-2 border-gray-100 rounded-xl">
         <label className="cursor-pointer w-full pb-[16px] shadow-md md:py-4 rounded-md ">
           <input
             type="file"

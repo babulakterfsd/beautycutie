@@ -10,7 +10,7 @@ const BlogPost = () => {
   const options2 = ['Oliva', 'Phoneix', 'Lana', 'Luna'];
   return (
     <div className="dashboard-container flex flex-col md:flex-row   gap-x-[10px] h-screen md:ml-3 w-full relative">
-      <div className="dashboard-content w-full order-2 md:order-1 md:p-5  h-screen overflow-y-scroll overflow-x-scroll md:overflow-x-hidden scrollbar-thumb-gray-400 scrollbar-track-gray-200 md:w-4/6">
+      <div className="dashboard-content w-full order-2 md:order-1 md:p-5  min-h-screen overflow-y-scroll overflow-x-scroll md:overflow-x-hidden scrollbar-thumb-gray-400 scrollbar-track-gray-200 md:w-4/6">
         <div className=" w-full md:px-6 px-3 shadow-xl rounded-b-2xl lg:pb-0  lg:-mt-4">
           <h1 className="mt-3 md:mt-0 text-cyan text-[14px] leading-[18px] md:text-[18px] md:leading-[28px] font-semibold mb-2 lg:mb-4 font-inter">
             Blog post
@@ -41,7 +41,7 @@ const BlogPost = () => {
             >
               Save as draft
             </Button>
-            <Button textStyle=" text-white" style="mt-3 md:mt-0 bg-[#FFAAA5] ">
+            <Button textStyle=" text-white" style="my-3 md:my-0 bg-[#FFAAA5] ">
               Publish
             </Button>
           </div>
