@@ -102,8 +102,8 @@ const DashboardHome = () => {
 
   return isloading ? (
     <div className="dashboard-container w-screen flex flex-col md:flex-row gap-x-[20px] h-screen md:mt-3">
-      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12 md:p-3 rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border border-gray-50 shadow-lg">
-        <div className="flex justify-between items-center mt-[15px] md:mt-[20px] mb-[12px]">
+      <div className="dashboard-content order-2 md:order-1  mx-auto  w-full  md:w-8/12  rounded-md h-screen overflow-y-scroll overflow-x-scroll  scrollbar-thumb-gray-400 scrollbar-track-gray-200 border-2 border-gray-100 shadow-lg">
+        <div className="flex justify-between items-center mt-[15px] md:mt-[20px] mb-[20px] md:p-3">
           <div className="flex pl-2 md:pl-0  gap-2 md:ml-[24px] items-center">
             <h1 className="font-inter text-cyan text-[12px] font-semibold lg:text-[18px] lg:leading-[18px]">
               Subscriber
@@ -118,12 +118,12 @@ const DashboardHome = () => {
         </div>
 
         <div className=" mx-auto ">
-          <table className="min-w-full mx-auto bg-white">
-            <thead className="  w-full  rounded-lg">
+          <table className="min-w-full">
+            <thead className="w-full bg-[#f9fafb]">
               <tr className="">
                 <th className="px-1 py-3 text-left text-xs font-medium  tracking-wider">
                   <div className="flex items-center md:ml-[24px]">
-                    <div className="flex items-center pl-4 border border-gray-200 rounded-md w-5 h-5"></div>
+                    <div className="flex items-center pl-4 border-l-0 border-r-0 border-2 border-gray-100 rounded-md w-5 h-5"></div>
                     <span className="ml-2 block text-[12px] font-inter text-cyan font-medium lg:leading-[18px]">
                       Name
                     </span>
@@ -131,19 +131,17 @@ const DashboardHome = () => {
                 </th>
                 <th className="px-1 py-3 text-center  text-xs font-medium text-gray-500 tracking-wider">
                   <div className="flex items-center justify-center">
-                    <span className=" mr-[3px] leading-[18px]	 text-[#67748E)] text-[12px] font-medium">
+                    <span className=" mr-[3px] text-[12px] font-inter text-cyan font-medium lg:leading-[18px]">
                       Status
                     </span>
                     <FaArrowDownLong />
                   </div>
                 </th>
-                {/* <th className="px-1 py-3 text-left text-xs font-medium text-gray-500 tracking-wider">
-                  Status
-                </th> */}
-                <th className="md:px-6 py-3 leading-[18px]  text-[12px] font-medium">
+
+                <th className="md:px-6 py-3 text-[12px] font-inter text-cyan font-medium lg:leading-[18px]">
                   Subscription Date
                 </th>
-                <th className="px-6 py-3 leading-[18px]  text-[12px] font-medium">
+                <th className="px-6 py-3 text-[12px] font-inter text-cyan font-medium lg:leading-[18px]">
                   Email address
                 </th>
                 <th className="px-6 py-3 text-[12px] font-medium"></th>
@@ -151,35 +149,38 @@ const DashboardHome = () => {
             </thead>
             <tbody>
               {tableData.map((person, index) => (
-                <tr key={index} className="">
-                  <td className="px-1 md:ml-[24px] flex items-center gap-x-2 ">
+                <tr
+                  key={index}
+                  className="lg:py-32 border-l-0 border-r-0 border-2 border-gray-100"
+                >
+                  <td className="px-1 md:ml-[24px] flex items-center gap-x-2 mt-1">
                     <div className="flex items-center pl-4 border border-gray-200 rounded-md w-5 h-5"></div>
 
-                    <div className="flex flex-col gap-y-1">
-                      <span className="lg:leading-[20px] font-medium text-[14px] font-inter text-cyan">
+                    <div className="flex flex-col">
+                      <span className="font-medium text-[14px] font-inter text-cyan">
                         {person.name}
                       </span>
-                      <span className="text-[14px] font-inter text-cyan">
+                      <span className="text-[12px] font-inter text-cyan">
                         {`@${person.username}`}
                       </span>
                     </div>
                   </td>
 
                   <td className="text-sm">
-                    <div className="flex gap-x-2 items-center justify-center  bg-[#ECFDF3] rounded-3xl w-[75px]">
+                    <div className="flex gap-x-2 items-center justify-center  bg-[#ECFDF3] rounded-3xl w-[75px] mx-auto">
                       <span className=" h-[8px] w-[8px] rounded-full bg-[#12B76A]" />
-                      <span className=" text-[#027A48] font-medium text-[12px]">
+                      <span className=" text-[#027A48] font-medium text-[12px] font-inter">
                         {person.status}
                       </span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
+                  <td className="px-6 py-4  text-center text-[13px] font-inter text-cyan">
                     {person.subscriptionDate}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap  text-center leading-[20px] font-normal text-[14px]">
+                  <td className="px-6 py-4 text-center text-[13px] font-inter text-cyan">
                     {person.email}
                   </td>
-                  <td className="px-6 flex items-center gap-x-5 py-4 whitespace-nowrap text-sm text-cyan">
+                  <td className="px-6 flex items-center gap-x-5 py-4 text-sm text-cyan">
                     <svg
                       className=" cursor-pointer"
                       xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +218,9 @@ const DashboardHome = () => {
               ))}
             </tbody>
           </table>
-          <Pagination />
+          <div className="md:p-3">
+            <Pagination />
+          </div>
         </div>
       </div>
       <div className="dashboard-content order-1 overflow-x-scroll md:order-2 w-full md:w-1/3 ">
