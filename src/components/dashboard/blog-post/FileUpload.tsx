@@ -19,7 +19,7 @@ const FileUpload: React.FC<IUpload> = ({ title, acceptOnly }) => {
 
   return (
     <div>
-      <div className=" flex flex-col mb-[16px] items-center w-screen h-1/4 md:w-4/6 ">
+      <div className=" flex flex-col mb-[16px] items-center w-screen h-1/4 md:w-4/6 border-2 border-gray-100 rounded-xl">
         <label className="cursor-pointer w-full pb-[16px] shadow-md md:py-4 rounded-md ">
           <input
             type="file"
@@ -41,11 +41,13 @@ const FileUpload: React.FC<IUpload> = ({ title, acceptOnly }) => {
                   <FiUploadCloud className=" text-slate-400" size={15} />
                 </div>
                 <div className="">
-                  <p className=" text-center mb-[4px] text-[#67748E] text-[12px] md:text-[14px] font-normal md:leading-[20px]">
-                    <span className="text-[#3699FF]">{clickToUploadText}</span>{' '}
+                  <p className=" text-center mb-[4px] text-[#67748E] text-[12px] md:text-[14px] font-normal md:leading-[20px] font-inter">
+                    <span className="text-[#3699FF] font-[600] font-inter">
+                      {clickToUploadText}
+                    </span>{' '}
                     {restOfText}
                   </p>
-                  <p className="text-[#67748E] text-[12px] md:text-[14px] font-normal md:leading-[20px] text-center md:pb-3">
+                  <p className="text-[#67748E] text-[12px] font-normal md:leading-[20px] text-center md:pb-3">
                     SVG, PNG, JPG or GIF (max. 800x400px)
                   </p>
                 </div>

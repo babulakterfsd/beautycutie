@@ -41,7 +41,7 @@ const CustomSelect: React.FC<ICustomSelect> = ({
 
   return (
     <div className="relative">
-      <p className=" mb-[6px] text-[#67748E] text-[12px] leading-[18px] md:text-[14px] md:leading-[20px]  font-medium ">
+      <p className=" mb-[6px] text-cyan text-[12px] leading-[18px] md:text-[14px] md:leading-[20px] font-[500] ">
         {title}
       </p>
       <div className="select-input relative w-full  md:w-2/5   md:mb-[16px]  rounded">
@@ -55,12 +55,12 @@ const CustomSelect: React.FC<ICustomSelect> = ({
 
             onChange={handleSearchChange}
             placeholder={filteredOptions.length !== 0 ? '' : 'Search...'}
-            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-slate-400"
+            className="w-full px-4 py-2 border-2 border-gray-100 rounded focus:outline-none"
             type="text"
             name=""
             id=""
           />
-          <div className=" absolute right-1 h-[20px] w-[20px]  flex justify-center items-center  border border-slate-400 rounded-full">
+          <div className=" absolute right-1 h-[20px] w-[20px]  flex justify-center items-center  border-2 border-slate-400 rounded-full">
             <p className="">?</p>
           </div>
           <div className="flex flex-wrap absolute ">
@@ -87,13 +87,6 @@ const CustomSelect: React.FC<ICustomSelect> = ({
         </div>
         {isOpen && (
           <div className="  mt-2 p-2 bg-white border border-gray-300 rounded shadow-lg w-64">
-            {/* <input
-              type="text"
-              placeholder="Search..."
-              className="w-full border-b border-gray-300 py-5 focus:outline-none focus:border-blue-500 mb-2"
-              value={searchValue}
-              onChange={handleSearchChange}
-            /> */}
             {filteredOptions.map((option) => (
               <label
                 key={option}
@@ -106,14 +99,14 @@ const CustomSelect: React.FC<ICustomSelect> = ({
                   onChange={() => toggleOption(option)}
                   className="mr-2 cursor-pointer py-4"
                 />
-                <span className="text-[12px] md:text-[14px] font-normal md:leading-[20px]">
+                <span className="text-[12px] md:text-[13px] font-normal md:leading-[20px]">
                   {option}
                 </span>
               </label>
             ))}
           </div>
         )}
-        <p className=" mt-[5px] text-[12px] md:text-[14px] font-normal md:leading-[20px]  text-[#475467]">
+        <p className=" mt-[5px] text-[12px] md:text-[13px] font-normal md:leading-[20px]  text-cyan font-inter">
           {/* This is a hint text to help user. */}
           {bottomTitle}
         </p>

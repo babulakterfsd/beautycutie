@@ -19,7 +19,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         <div className="flex gap-x-1 items-center">
           <label
             htmlFor="content"
-            className="block text-[12px] mb-[6px] text-[#67748E]   md:text-[14px]  md:leading-[20px] font-medium"
+            className="block text-[12px] mb-[6px] text-cyan   md:text-[14px]  md:leading-[20px] font-medium font-inter"
           >
             {label}
           </label>
@@ -27,7 +27,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         </div>
         <textarea
           className={`w-full px-4 py-2 border ${
-            isContentTooLong ? 'border-red-500' : 'border-gray-300'
+            isContentTooLong ? 'border-red-500' : 'border-2 border-gray-100'
           } rounded focus:outline-none focus:border-slate-400`}
           {...textareaProps}
         />

@@ -24,10 +24,10 @@ const BlogForm: React.FC = () => {
   useEffect(() => {
     setIsClient(true);
   }, []);
-  return isClient ? (
-    <div className=" w-full     bg-white rounded ">
+  return (
+    <div className=" w-full bg-white rounded ">
       <Input
-        placeholder="Enter the blog title"
+        placeholder="What is your title?"
         onChange={handleChange}
         value={formData.title}
         name="title"
@@ -62,16 +62,14 @@ const BlogForm: React.FC = () => {
         name="content"
         value={formData.content}
         onChange={handleChange}
-        placeholder="Enter the blog content"
+        placeholder="e.g. I joined Stripe’s Customer Success team to help them scale their checkout product. I focused mainly on onboarding new customers and resolving complaints."
         maxLength={400}
         rows={6}
         label="Blog inputs*"
-        labelMax=" Blog Content (Max 400 characters)"
+        labelMax="400 characters left"
         isContentTooLong={isContentTooLong}
       />
     </div>
-  ) : (
-    <p>loading..........</p>
   );
 };
 
