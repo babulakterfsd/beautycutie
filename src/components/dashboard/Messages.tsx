@@ -140,12 +140,12 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
           </div> */}
             <div className="modal-body">
               <div className="h">
-                <h2 className=" text-lg md:mb-4 text-[#FFAAA5]">
+                <h2 className=" text-lg md:mb-4 text-[#FFAAA5] font-inter">
                   Message history
                 </h2>
                 <div className="messages">
                   {messages.slice(0, 13).map((message, index) => {
-                    return index < 10 ? (
+                    return (
                       <div
                         className={` flex mb-2 ${
                           index % 2 !== 0 ? ' justify-end ' : ' justify-start '
@@ -175,52 +175,23 @@ const Messages: React.FC<{ messages: Message[] }> = ({ messages }) => {
                           </div>
                         </div>
                       </div>
-                    ) : (
-                      <div>
-                        <h2
-                          className={`${
-                            index == 11 ? '' : ' hidden'
-                          } text-lg md:mb-4 text-[#FFAAA5]`}
-                        >
-                          New Message
-                        </h2>
-
-                        <div
-                          className={` flex mb-2 ${
-                            index % 2 !== 0
-                              ? ' justify-end '
-                              : ' justify-start '
-                          }`}
-                          key={index}
-                        >
-                          <div className="">
-                            <div className="flex justify-between mb-[6px]">
-                              <p className=" font-semibold text-sm text-[#67748E]">
-                                {index % 2 !== 0
-                                  ? `You (${message.username})`
-                                  : `${message.username}`}
-                              </p>
-                              <p className=" font-semibold text-sm text-[#67748E]">
-                                {formattedDate}
-                              </p>
-                            </div>
-                            <div
-                              className={`p-3 rounded-lg mb-3 md:h-[92px] md:w-[272px] ${
-                                index % 2 !== 0
-                                  ? 'bg-[#A8DDE6]'
-                                  : ' bg-gray-300'
-                              }`}
-                            >
-                              <p className=" text-sm font-semibold">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Similique!
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     );
                   })}
+                  <h2 className=" text-lg md:mb-4 text-[#FFAAA5] font-inter mb-2">
+                    New Message
+                  </h2>
+                  <div className="flex w-1/2 flex-col gap-y-1">
+                    <Input
+                      isCliphboard={false}
+                      label="Anita Cruz"
+                      placeholder="Sounds perfect, Thanks!"
+                    />
+                    <Input
+                      isCliphboard={false}
+                      label="Admin name*"
+                      placeholder="Ahamad"
+                    />
+                  </div>
                   <div className="flex gap-x-2">
                     <Input
                       isCliphboard
