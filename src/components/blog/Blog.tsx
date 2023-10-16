@@ -1,5 +1,6 @@
 'use client';
 
+import { BlogPostType } from '@/types/global.types';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
@@ -10,7 +11,7 @@ const Blog = () => {
   const [email, setEmail] = useState('');
   const [activeCategory, setActiveCategory] = useState('View all');
 
-  const [allBlogPosts, setAllBlogs] = useState([]);
+  const [allBlogPosts, setAllBlogs] = useState([] as BlogPostType[]);
 
   useEffect(() => {
     fetch('/api/postblog')
