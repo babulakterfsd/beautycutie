@@ -16,7 +16,7 @@ const DashboardSideBar = () => {
     <div className="h-full w-full relative bg-white">
       <div className="">
         <div className="logo leading-[60px] mb-[64px] ">
-          <Link className=" block mb-[32px] lg:mt-8" href="/dashboard">
+          <Link className=" block mb-[32px] lg:mt-8" href="/">
             <Image
               className="h-[68px] w-[65px]"
               src={logo}

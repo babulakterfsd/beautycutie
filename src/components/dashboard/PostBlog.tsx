@@ -39,7 +39,7 @@ const BlogPost = () => {
             category: '',
             image: '',
           });
-          // router.push('/blog');
+          router.push('/blog');
         }
       })
       .catch((err) => console.log(err));
