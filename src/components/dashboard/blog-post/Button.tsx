@@ -4,6 +4,7 @@ interface IButton {
   icon?: React.ReactNode;
   style?: string;
   textStyle?: string;
+  type?: 'button' | 'submit' | 'reset';
 }
 const Button: React.FC<React.PropsWithChildren<IButton>> = ({
   handleClick,
@@ -18,7 +19,7 @@ const Button: React.FC<React.PropsWithChildren<IButton>> = ({
       className={` flex w-full py-3 gap-x-2  ${style} justify-center items-center rounded-md cursor-pointer`}
     >
       {icon}
-      <button className={`text-base font-semibold ${textStyle}`}>
+      <button type="submit" className={`text-base font-semibold ${textStyle}`}>
         {children}
       </button>
     </div>

@@ -1,16 +1,7 @@
-import blog1 from '../../public/assets/images/blog1.png';
-import blog2 from '../../public/assets/images/blog2.png';
-import blog3 from '../../public/assets/images/blog3.png';
-import blog4 from '../../public/assets/images/blog4.png';
-import blog5 from '../../public/assets/images/blog5.png';
-import blog6 from '../../public/assets/images/blog6.png';
-import blog7 from '../../public/assets/images/blog7.png';
-import blog8 from '../../public/assets/images/blog8.png';
-
 export const BlogData = [
   {
     id: 1,
-    image: blog1,
+    image: 'https://i.ibb.co/fHnVmWt/blog1.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -18,7 +9,7 @@ export const BlogData = [
   },
   {
     id: 2,
-    image: blog2,
+    image: 'https://i.ibb.co/N6sYfws/blog2.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -26,7 +17,7 @@ export const BlogData = [
   },
   {
     id: 3,
-    image: blog3,
+    image: 'https://i.ibb.co/0FfNSF0/blog3.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -34,7 +25,7 @@ export const BlogData = [
   },
   {
     id: 4,
-    image: blog4,
+    image: 'https://i.ibb.co/HnCw5M3/blog4.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -42,7 +33,7 @@ export const BlogData = [
   },
   {
     id: 5,
-    image: blog5,
+    image: 'https://i.ibb.co/zV3JdLh/blog5.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -50,7 +41,7 @@ export const BlogData = [
   },
   {
     id: 6,
-    image: blog6,
+    image: 'https://i.ibb.co/fxj24pg/blog6.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -58,7 +49,7 @@ export const BlogData = [
   },
   {
     id: 7,
-    image: blog7,
+    image: 'https://i.ibb.co/Tv2vpCp/blog7.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
@@ -66,7 +57,7 @@ export const BlogData = [
   },
   {
     id: 8,
-    image: blog8,
+    image: 'https://i.ibb.co/WV4yQ2P/blog8.png',
     title: 'UX review presentations',
     content:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',

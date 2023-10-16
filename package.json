@@ -28,6 +28,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "material-react-table": "^1.15.0",
+    "mongoose": "^7.6.2",
     "next": "13.4.19",
     "nextjs-toploader": "^1.4.2",
     "postcss": "8.4.27",

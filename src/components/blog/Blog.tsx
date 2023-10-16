@@ -1,18 +1,30 @@
 'use client';
 
-import { BlogData } from '@/lib/BlogData';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Blog = () => {
   const [email, setEmail] = useState('');
   const [activeCategory, setActiveCategory] = useState('View all');
 
+  const [allBlogPosts, setAllBlogs] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/postblog')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.statusCode === 200) {
+          console.log('data', data?.data);
+          setAllBlogs(data?.data);
+        }
+      });
+  }, []);
+
   let blogCategories: string[] = ['View all'];
-  for (const blog of BlogData) {
+  for (const blog of allBlogPosts) {
     if (!blogCategories.includes(blog.category)) {
       blogCategories.push(blog.category);
     }
@@ -169,37 +181,48 @@ const Blog = () => {
         {/* blog cards */}
         <div className="col-span-12 md:col-span-9">
           <div className="grid grid-cols-12 md:ml-10 lg:ml-20 gap-4 md:gap-x-6 gap-y-14 md:gap-y-16">
-            {BlogData.map((blog) => {
-              return (
-                <div
-                  className="col-span-12 md:col-span-6"
-                  key={blog.id}
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <Image src={blog.image} alt={blog.title} />
-                  <h4 className="text-cyan font-inter lg:text-[1.5rem] font-bold md:font-semibold lg:leading-[32px] mt-5 md:mt-8">
-                    {blog.title}
-                  </h4>
-                  <p className="text-cyan font-inter lg:leading-[24px] mt-3 md:mt-4">
-                    {blog.content}
-                  </p>
-                  <p className="mt-4">
-                    <Link
-                      href={`/blog/${blog.id}/${blog.title
-                        .replace(/\s/g, '-')
-                        .toLowerCase()}`}
-                      className="text-primary font-semibold"
-                    >
-                      Read Post{' '}
-                      <span className="transform -rotate-45 origin-center inline-block">
-                        <FontAwesomeIcon icon={faArrowRight} />
-                      </span>
-                    </Link>
-                  </p>
-                </div>
-              );
-            })}
+            {allBlogPosts.length < 1 ? (
+              <div className="flex justify-center items-center mx-auto">
+                <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-400"></div>
+              </div>
+            ) : (
+              allBlogPosts.map((blog: any) => {
+                return (
+                  <div
+                    className="col-span-12 md:col-span-6"
+                    key={blog.id}
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
+                    <Image
+                      src={blog.image}
+                      alt={blog.title}
+                      width={450}
+                      height={450}
+                    />
+                    <h4 className="text-cyan font-inter lg:text-[1.5rem] font-bold md:font-semibold lg:leading-[32px] mt-5 md:mt-8">
+                      {blog.title}
+                    </h4>
+                    <p className="text-cyan font-inter lg:leading-[24px] mt-3 md:mt-4">
+                      {blog.content}
+                    </p>
+                    <p className="mt-4">
+                      <Link
+                        href={`/blog/${blog.id}/${blog.title
+                          .replace(/\s/g, '-')
+                          .toLowerCase()}`}
+                        className="text-primary font-semibold"
+                      >
+                        Read Post{' '}
+                        <span className="transform -rotate-45 origin-center inline-block">
+                          <FontAwesomeIcon icon={faArrowRight} />
+                        </span>
+                      </Link>
+                    </p>
+                  </div>
+                );
+              })
+            )}
           </div>
         </div>
       </div>

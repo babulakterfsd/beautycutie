@@ -1,17 +1,11 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import useAppContext from '@/hooks/useAppContext';
+import React from 'react';
 import Input from '../Input';
 import TextArea from '../TextArea';
 
 const BlogForm: React.FC = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  const [formData, setFormData] = useState({
-    title: '',
-    category: '',
-    blogger: '',
-    content: '',
-  });
+  const { formData, setFormData } = useAppContext();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,10 +14,6 @@ const BlogForm: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const isContentTooLong = formData.content.length > 400;
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
   return (
     <div className=" w-full bg-white rounded ">
       <Input
@@ -67,7 +57,7 @@ const BlogForm: React.FC = () => {
         rows={6}
         label="Blog inputs*"
         labelMax="400 characters left"
-        isContentTooLong={isContentTooLong}
+        isContentTooLong={formData.content.length > 400}
       />
     </div>
   );
