@@ -5,7 +5,6 @@ import {
   faContactBook,
   faDollarSign,
   faHouse,
-  faPen,
   faProjectDiagram,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
@@ -77,12 +76,6 @@ const MobileMenu = () => {
         <span className="flex gap-x-4 items-center text-primary">
           <FontAwesomeIcon icon={faContactBook} />
           <span className="uppercase font-[700]">Contact</span>
-        </span>
-      </Link>
-      <Link href="/dashboard" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span className="flex gap-x-4 items-center text-primary">
-          <FontAwesomeIcon icon={faPen} />
-          <span className="uppercase font-[700]">Dashboard</span>
         </span>
       </Link>
     </div>
