@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 import '../../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Bookitu',
+  title: 'Beautycutie',
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <title>Bookitu</title>
+      <title>Beautycutie</title>
       <body>
         <AppContextProvider>
           <Navbar />

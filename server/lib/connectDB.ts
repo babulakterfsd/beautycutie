@@ -9,7 +9,7 @@ const connectDB = async () => {
 
   try {
     await mongoose.connect(uri);
-    console.log('Connected to bookitu database');
+    console.log('Connected to Beautycutie database');
   } catch (error) {
     console.log(error);
   }

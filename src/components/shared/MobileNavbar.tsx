@@ -129,7 +129,7 @@ const MenubarTitle = () => {
   const pathname = usePathname();
 
   if (pathname === '/') {
-    return <span className="font-bold text-xl gradientText">Bookitu</span>;
+    return <span className="font-bold text-xl gradientText">Beautycutie</span>;
   } else if (pathname === '/about') {
     return <span className="font-bold text-xl gradientText">About</span>;
   } else if (pathname === '/blog') {
@@ -141,6 +141,6 @@ const MenubarTitle = () => {
   } else if (pathname === '/pricing') {
     return <span className="font-bold text-xl gradientText">Pricing</span>;
   } else {
-    return <span className="font-bold text-xl gradientText">Bookitu</span>;
+    return <span className="font-bold text-xl gradientText">Beautycutie</span>;
   }
 };

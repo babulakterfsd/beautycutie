@@ -19,7 +19,7 @@ const WhyChoosingUs = () => {
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        Why Choosing <span>Bookitu</span> Over Other Booking Systems?
+        Why Choosing <span>Beautycutie</span> Over Other Booking Systems?
       </h2>
       <div className="mt-12 lg:mt-20  grid grid-cols-12 gap-y-5 lg:gap-x-8">
         {/* programmatic approach */}

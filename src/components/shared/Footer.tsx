@@ -9,7 +9,7 @@ export default function Footer() {
           {/* first part */}
           <div className="col-span-6 flex flex-col gap-4 md:col-span-3">
             <h4 className="lg:text-[.9rem] lg:font-semibold lg:leading-[1.2rem] text-primary">
-              Bookitu
+              Beautycutie
             </h4>
             <div className="flex flex-col gap-y-3">
               <span className="text-secondary lg:font-semibold lg:leading-[1.5rem] cursor-pointer">
@@ -108,7 +108,7 @@ export default function Footer() {
               height={32}
             />
             <p className=" md:text-center lg:order-first lg:mt-2 lg:pb-3 lg:font-[400] text-secondary">
-              © {new Date().getFullYear()} Bookitu. All rights reserved.
+              © {new Date().getFullYear()} Beautycutie. All rights reserved.
             </p>
           </div>
         </div>

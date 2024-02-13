@@ -31,10 +31,10 @@ const Banner = () => {
           data-aos-duration="1500"
         >
           <p className="text-center text-[#666] font-inter text-[1.1rem] lg:text-[1rem] lg:font-roboto capitalize lg:tracking-[-0.205px] lg:mr-20">
-            Easy-to-use" and "best" software are slogans of the past. At Bookitu
-            we focus on solving real problems faced by salon owners every day.
-            We focused on what is needed and removed “nice to have” features to
-            create easy-to-use and efficient applications.{' '}
+            Easy-to-use" and "best" software are slogans of the past. At
+            Beautycutie we focus on solving real problems faced by salon owners
+            every day. We focused on what is needed and removed “nice to have”
+            features to create easy-to-use and efficient applications.{' '}
           </p>
         </div>
         <div

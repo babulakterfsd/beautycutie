@@ -49,7 +49,7 @@ const About = () => {
           them missed some crucial features. She couldn't believe that there was
           no perfect solution in the market. That's when Mr. X partner decided
           to take matters into his own hands and build a state-of-the-art
-          booking system. The result? Bookitu - a booking system designed by
+          booking system. The result? Beautycutie - a booking system designed by
           salon owners, for salon owners. No more headaches and missed
           opportunities - just a system that works as hard as you do to make
           your salon run smoothly."
